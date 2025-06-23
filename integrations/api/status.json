@@ -1,0 +1,9 @@
+{
+  "status": "active",
+  "base_url": "http://localhost:8080",
+  "version": "v1",
+  "endpoints_available": 9,
+  "authentication_enabled": true,
+  "rate_limiting_enabled": true,
+  "last_health_check": "2025-06-22T08:36:56.612058"
+}

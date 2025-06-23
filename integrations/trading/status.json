@@ -1,0 +1,11 @@
+{
+  "status": "active",
+  "mode": "paper_trading",
+  "live_trading_enabled": false,
+  "paper_trading_enabled": true,
+  "max_concurrent_trades": 10,
+  "confidence_threshold": 0.7,
+  "connected_exchanges": [],
+  "signal_sources": [],
+  "last_signal_check": "2025-06-22T08:36:56.611896"
+}

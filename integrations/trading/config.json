@@ -1,0 +1,21 @@
+{
+  "enable_live_trading": false,
+  "enable_paper_trading": true,
+  "max_concurrent_trades": 10,
+  "min_confidence_threshold": 0.7,
+  "risk_management": {
+    "max_position_size": 0.1,
+    "max_daily_loss": 0.05,
+    "stop_loss_percent": 0.02
+  },
+  "supported_exchanges": [
+    "binance",
+    "coinbase",
+    "kraken"
+  ],
+  "signal_sources": [
+    "new_listing_detector",
+    "historical_data_fetcher",
+    "social_sentiment_analyzer"
+  ]
+}

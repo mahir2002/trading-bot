@@ -1,0 +1,28 @@
+{
+  "schedule": {
+    "enabled": true,
+    "hour": 2,
+    "minute": 0,
+    "timezone": "UTC"
+  },
+  "pipeline": {
+    "steps": {
+      "fetch_cex_coins": true,
+      "fetch_dex_coins": true,
+      "detect_new_listings": true,
+      "fetch_historical_data": true,
+      "analyze_sentiment": true,
+      "run_ai_models": true
+    },
+    "timeout_minutes": 120,
+    "retry_attempts": 3,
+    "retry_delay": 300,
+    "stop_on_error": false
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/pipeline_scheduler.log",
+    "max_size_mb": 100,
+    "backup_count": 5
+  }
+}

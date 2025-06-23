@@ -1,0 +1,275 @@
+{
+  "opportunities": [
+    {
+      "symbol": "meme",
+      "opportunity_score": 79.1189393939394,
+      "opportunity_type": "new_coin",
+      "avg_sentiment": 0.0006313131313131307,
+      "total_engagement": 1410,
+      "mention_count": 2,
+      "profit_signals": 4,
+      "new_coin_signals": 1,
+      "sample_tweets": [
+        "\ud83d\ude80 New memecoin $ROCKET just launched! Hidden gem potential 100x! #crypto #memecoin",
+        "PEPE coin surging! \ud83d\udc38 Memecoin season is back! $PEPE to the moon!"
+      ],
+      "verification": {
+        "exists": true,
+        "symbol": "MEMEUSDT",
+        "price": 0.001963,
+        "change_24h": 1.342,
+        "volume_24h": 1675356559.0
+      }
+    },
+    {
+      "symbol": "memecoin",
+      "opportunity_score": 79.1189393939394,
+      "opportunity_type": "new_coin",
+      "avg_sentiment": 0.0006313131313131307,
+      "total_engagement": 1410,
+      "mention_count": 2,
+      "profit_signals": 4,
+      "new_coin_signals": 1,
+      "sample_tweets": [
+        "\ud83d\ude80 New memecoin $ROCKET just launched! Hidden gem potential 100x! #crypto #memecoin",
+        "PEPE coin surging! \ud83d\udc38 Memecoin season is back! $PEPE to the moon!"
+      ],
+      "verification": {
+        "exists": false,
+        "symbol": "MEMECOINUSDT"
+      }
+    }
+  ],
+  "summary": {
+    "total_tweets": 5,
+    "analyzed_tweets": 5,
+    "total_opportunities": 2,
+    "verified_opportunities": 1,
+    "avg_sentiment": -0.031035353535353537,
+    "top_categories": {
+      "profit_signals": 8,
+      "meme": 6,
+      "potential_new": 5,
+      "major": 4,
+      "new_coin_signals": 1,
+      "defi": 1
+    }
+  },
+  "analyzed_tweets": [
+    {
+      "id": 1,
+      "text": "\ud83d\ude80 New memecoin $ROCKET just launched! Hidden gem potential 100x! #crypto #memecoin",
+      "created_at": "2025-06-11 17:45:18.710174",
+      "author_id": "demo_user_1",
+      "retweet_count": 45,
+      "like_count": 120,
+      "reply_count": 23,
+      "quote_count": 8,
+      "sentiment": {
+        "polarity": 0.0012626262626262614,
+        "subjectivity": 0.5959595959595959,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "meme",
+          "category": "meme",
+          "context": "\ud83d\ude80 New memecoin $ROCKET just la"
+        },
+        {
+          "keyword": "memecoin",
+          "category": "meme",
+          "context": "\ud83d\ude80 New memecoin $ROCKET just launch"
+        },
+        {
+          "keyword": "gem",
+          "category": "meme",
+          "context": "st launched! Hidden gem potential 100x! #cr"
+        },
+        {
+          "keyword": "rocket",
+          "category": "profit_signals",
+          "context": "\ud83d\ude80 New memecoin $ROCKET just launched! Hidd"
+        },
+        {
+          "keyword": "\ud83d\ude80",
+          "category": "profit_signals",
+          "context": "\ud83d\ude80 New memecoin $ROCKE"
+        },
+        {
+          "keyword": "hidden gem",
+          "category": "profit_signals",
+          "context": "CKET just launched! Hidden gem potential 100x! #cr"
+        },
+        {
+          "keyword": "just launched",
+          "category": "new_coin_signals",
+          "context": "ew memecoin $ROCKET just launched! Hidden gem potenti"
+        },
+        {
+          "keyword": "$ROCKET",
+          "category": "potential_new",
+          "context": "\ud83d\ude80 New memecoin $ROCKET just launched! Hidd"
+        }
+      ],
+      "engagement_score": 317
+    },
+    {
+      "id": 2,
+      "text": "Bitcoin breaking resistance! $BTC looking bullish \ud83d\udcc8 Next target $120k",
+      "created_at": "2025-06-11 17:40:18.710182",
+      "author_id": "demo_user_2",
+      "retweet_count": 89,
+      "like_count": 234,
+      "reply_count": 45,
+      "quote_count": 12,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "Bitcoin breaking resistance"
+        },
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "eaking resistance! $BTC looking bullish \ud83d\udcc8 N"
+        },
+        {
+          "keyword": "\ud83d\udcc8",
+          "category": "profit_signals",
+          "context": "BTC looking bullish \ud83d\udcc8 Next target $120k"
+        },
+        {
+          "keyword": "bullish",
+          "category": "profit_signals",
+          "context": "tance! $BTC looking bullish \ud83d\udcc8 Next target $120k"
+        },
+        {
+          "keyword": "$BTC",
+          "category": "potential_new",
+          "context": "reaking resistance! $BTC looking bullish \ud83d\udcc8 N"
+        }
+      ],
+      "engagement_score": 615
+    },
+    {
+      "id": 3,
+      "text": "PEPE coin surging! \ud83d\udc38 Memecoin season is back! $PEPE to the moon!",
+      "created_at": "2025-06-11 17:35:18.710196",
+      "author_id": "demo_user_3",
+      "retweet_count": 156,
+      "like_count": 445,
+      "reply_count": 67,
+      "quote_count": 23,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "pepe",
+          "category": "meme",
+          "context": "PEPE coin surging! \ud83d\udc38 Mem"
+        },
+        {
+          "keyword": "meme",
+          "category": "meme",
+          "context": "EPE coin surging! \ud83d\udc38 Memecoin season is back!"
+        },
+        {
+          "keyword": "memecoin",
+          "category": "meme",
+          "context": "EPE coin surging! \ud83d\udc38 Memecoin season is back! $PE"
+        },
+        {
+          "keyword": "moon",
+          "category": "profit_signals",
+          "context": "back! $PEPE to the moon!"
+        },
+        {
+          "keyword": "$PEPE",
+          "category": "potential_new",
+          "context": "oin season is back! $PEPE to the moon!"
+        }
+      ],
+      "engagement_score": 1093
+    },
+    {
+      "id": 4,
+      "text": "New AI token $AIBOT just listed on DEX! Early entry opportunity \ud83e\udd16",
+      "created_at": "2025-06-11 17:30:18.710204",
+      "author_id": "demo_user_4",
+      "retweet_count": 34,
+      "like_count": 89,
+      "reply_count": 12,
+      "quote_count": 5,
+      "sentiment": {
+        "polarity": 0.13522727272727272,
+        "subjectivity": 0.37727272727272726,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "uni",
+          "category": "defi",
+          "context": "! Early entry opportunity \ud83e\udd16"
+        },
+        {
+          "keyword": "early entry",
+          "category": "profit_signals",
+          "context": "just listed on DEX! Early entry opportunity \ud83e\udd16"
+        },
+        {
+          "keyword": "$AIBOT",
+          "category": "potential_new",
+          "context": "New AI token $AIBOT just listed on DEX!"
+        }
+      ],
+      "engagement_score": 225
+    },
+    {
+      "id": 5,
+      "text": "Solana ecosystem exploding! $SOL DeFi tokens pumping hard \ud83d\udd25",
+      "created_at": "2025-06-11 17:25:18.710210",
+      "author_id": "demo_user_5",
+      "retweet_count": 78,
+      "like_count": 198,
+      "reply_count": 34,
+      "quote_count": 9,
+      "sentiment": {
+        "polarity": -0.2916666666666667,
+        "subjectivity": 0.5416666666666666,
+        "classification": "negative"
+      },
+      "mentions": [
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "Solana ecosystem exploding"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "Solana ecosystem explod"
+        },
+        {
+          "keyword": "pump",
+          "category": "profit_signals",
+          "context": "g! $SOL DeFi tokens pumping hard \ud83d\udd25"
+        },
+        {
+          "keyword": "$SOL",
+          "category": "potential_new",
+          "context": "cosystem exploding! $SOL DeFi tokens pumping"
+        }
+      ],
+      "engagement_score": 518
+    }
+  ]
+}

@@ -1,0 +1,3462 @@
+{
+  "opportunities": [
+    {
+      "symbol": "eth",
+      "opportunity_score": 245.5943091467356,
+      "opportunity_type": "new_coin",
+      "avg_sentiment": 0.35081030489118725,
+      "total_engagement": 7,
+      "mention_count": 34,
+      "profit_signals": 5,
+      "new_coin_signals": 1,
+      "sample_tweets": [
+        "$ASTRA at $10? Easy. \ud83d\udcc8  \nSpoke with the team $100M MC is undervalued. Real utility, real upside. \ud83d\udc8e\n\nQ: Which low-cap are you most bullish on?  \n\nPortfolio: $BTC, $SOLANA, $HEX, $QUBIC, $BERRY, $SYNK, $INTX, $PROPC, $GRASS, $APES, $COR, $ETH, $BNB, $RSN, $BONK https://t.co/dfyG72XEWb",
+        "@19teen_eth @yeet In YEET we gamble!!",
+        "@sharafi_eth GM king\ud83e\udee1\ud83d\udc99"
+      ],
+      "verification": {
+        "exists": true,
+        "symbol": "ETHUSDT",
+        "price": 2859.57,
+        "change_24h": 4.348,
+        "volume_24h": 901955.185
+      }
+    },
+    {
+      "symbol": "sol",
+      "opportunity_score": 225.33002039627038,
+      "opportunity_type": "new_coin",
+      "avg_sentiment": 0.17333401320901323,
+      "total_engagement": 13,
+      "mention_count": 25,
+      "profit_signals": 5,
+      "new_coin_signals": 3,
+      "sample_tweets": [
+        "$ASTRA at $10? Easy. \ud83d\udcc8  \nSpoke with the team $100M MC is undervalued. Real utility, real upside. \ud83d\udc8e\n\nQ: Which low-cap are you most bullish on?  \n\nPortfolio: $BTC, $SOLANA, $HEX, $QUBIC, $BERRY, $SYNK, $INTX, $PROPC, $GRASS, $APES, $COR, $ETH, $BNB, $RSN, $BONK https://t.co/dfyG72XEWb",
+        "@bloop_sol @thep33l Finallt got on the bandwagon! \ud83d\ude4c\ud83c\udffd\ud83d\ude4c\ud83c\udffd",
+        "\ud83d\udca1 Sm\ud83d\udcb0 buys-&gt;12.52SOL \ud83d\ude80\n\n\u251c\ud83d\udc8e : $BIGIFTRUE \n\u251c\ud83d\udcb9 CA: HGXgk6bqPSCSgoQSae4sTi1dguoTnC6gKzX17aU4dBLV\n\u251c\ud83d\udd2e MKT.Cap : 3.7M\n\u251c\ud83c\udf20 TXs/Vol: 2069/$959.7K\n\ud83d\udce3 Alert \ud83d\udc49 https://t.co/Gk3HOqKdvT \n\ud83e\udd16 Quick buy \ud83d\udc49 https://t.co/HPoinqcMNl\ud83d\udc8e\n- Scroll through the trading page for details -"
+      ],
+      "verification": {
+        "exists": true,
+        "symbol": "SOLUSDT",
+        "price": 165.77,
+        "change_24h": 4.759,
+        "volume_24h": 4507473.299
+      }
+    },
+    {
+      "symbol": "solana",
+      "opportunity_score": 146.71837968849331,
+      "opportunity_type": "new_coin",
+      "avg_sentiment": 0.22361265628311083,
+      "total_engagement": 1,
+      "mention_count": 11,
+      "profit_signals": 4,
+      "new_coin_signals": 3,
+      "sample_tweets": [
+        "$ASTRA at $10? Easy. \ud83d\udcc8  \nSpoke with the team $100M MC is undervalued. Real utility, real upside. \ud83d\udc8e\n\nQ: Which low-cap are you most bullish on?  \n\nPortfolio: $BTC, $SOLANA, $HEX, $QUBIC, $BERRY, $SYNK, $INTX, $PROPC, $GRASS, $APES, $COR, $ETH, $BNB, $RSN, $BONK https://t.co/dfyG72XEWb",
+        "\u26a0\ufe0f If someone asks for fees on #Synlenza or #TXEX, double-check. It could be a scam!\n#CryptoScam #CryptoRecovery #Capixtrade #Paobc #SOLANA #crpobase https://t.co/YQ580BIHO9",
+        "@0xdirichlet @solana @sanctumso \u2665\ufe0f\n\nthe Sphere SOL is Good SOL"
+      ],
+      "verification": {
+        "exists": false,
+        "symbol": "SOLANAUSDT"
+      }
+    },
+    {
+      "symbol": "btc",
+      "opportunity_score": 146.71296487603306,
+      "opportunity_type": "established",
+      "avg_sentiment": 0.2220988292011019,
+      "total_engagement": 5,
+      "mention_count": 22,
+      "profit_signals": 3,
+      "new_coin_signals": 0,
+      "sample_tweets": [
+        "@SenseiBR_btc \ud83d\udc38 Meet @FrogeBNB THE FROG \u2013 the legendary Discord emoji is now a memecoin on BNB Chain!\n\nCA: 0x4258eae51CDFFa6099f1B991a129Fc26A4462Df5\n\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist",
+        "$ASTRA at $10? Easy. \ud83d\udcc8  \nSpoke with the team $100M MC is undervalued. Real utility, real upside. \ud83d\udc8e\n\nQ: Which low-cap are you most bullish on?  \n\nPortfolio: $BTC, $SOLANA, $HEX, $QUBIC, $BERRY, $SYNK, $INTX, $PROPC, $GRASS, $APES, $COR, $ETH, $BNB, $RSN, $BONK https://t.co/dfyG72XEWb",
+        "\ud83d\udcca Net inflow from public companies buying BTC | Jun 11  \n\n\ud83d\udd35 Weekly Net Inflow: $145.76M\n\u26aa\ufe0f Weekly Bitcoin Net Inflow: 1,379.13\n\ud83d\udcb0 BTC Price: $110,192.75\n\nExplore more key information on #SoSoValue: https://t.co/A8Tvt7w9wq"
+      ],
+      "verification": {
+        "exists": true,
+        "symbol": "BTCUSDT",
+        "price": 109400.83,
+        "change_24h": 0.597,
+        "volume_24h": 13611.99364
+      }
+    },
+    {
+      "symbol": "bnb",
+      "opportunity_score": 137.81722518552874,
+      "opportunity_type": "established",
+      "avg_sentiment": 0.2605741728509586,
+      "total_engagement": 0,
+      "mention_count": 14,
+      "profit_signals": 6,
+      "new_coin_signals": 0,
+      "sample_tweets": [
+        "@SenseiBR_btc \ud83d\udc38 Meet @FrogeBNB THE FROG \u2013 the legendary Discord emoji is now a memecoin on BNB Chain!\n\nCA: 0x4258eae51CDFFa6099f1B991a129Fc26A4462Df5\n\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist",
+        "$ASTRA at $10? Easy. \ud83d\udcc8  \nSpoke with the team $100M MC is undervalued. Real utility, real upside. \ud83d\udc8e\n\nQ: Which low-cap are you most bullish on?  \n\nPortfolio: $BTC, $SOLANA, $HEX, $QUBIC, $BERRY, $SYNK, $INTX, $PROPC, $GRASS, $APES, $COR, $ETH, $BNB, $RSN, $BONK https://t.co/dfyG72XEWb",
+        "$ASTRA makes it easy: Claim rewards, no strings attached. \ud83d\ude80\n\nHolding strong: $HEX, $PYR, $BNB, $KAS, $VET, $XRP, $ICP, $DOGE, $DOT, $XLM, $TARA, $QNT, $UNI, $LINK, $CHZ, $AZERO, $SHIB, $THETA, $MANA, $BRISE, $PEPE, $ALGO, $RUNE, $AVAX. \ud83d\udcb8 https://t.co/QiP9P1DDRF"
+      ],
+      "verification": {
+        "exists": true,
+        "symbol": "BNBUSDT",
+        "price": 668.71,
+        "change_24h": 0.653,
+        "volume_24h": 186702.131
+      }
+    },
+    {
+      "symbol": "\ud83d\udcc8",
+      "opportunity_score": 117.9009090909091,
+      "opportunity_type": "established",
+      "avg_sentiment": 0.4280303030303029,
+      "total_engagement": 6,
+      "mention_count": 5,
+      "profit_signals": 8,
+      "new_coin_signals": 0,
+      "sample_tweets": [
+        "$ASTRA at $10? Easy. \ud83d\udcc8  \nSpoke with the team $100M MC is undervalued. Real utility, real upside. \ud83d\udc8e\n\nQ: Which low-cap are you most bullish on?  \n\nPortfolio: $BTC, $SOLANA, $HEX, $QUBIC, $BERRY, $SYNK, $INTX, $PROPC, $GRASS, $APES, $COR, $ETH, $BNB, $RSN, $BONK https://t.co/dfyG72XEWb",
+        "\ud83e\udd16 FDV Alert \ud83e\udd16\n\n\ud83d\udcaf - $awra\n\ud83c\udf20 - 9ZeqEEsCT2WmBs18uV6E2kf9F3nHS2Heh1KAr8nhpump\n\ud83d\udcc8 - 10MIN \ud83c\udd99 +$14.9K(+310.5%) \n\ud83c\udfc6 - TXS : 221/$17.1K\n\ud83d\udd0a Signal \ud83d\udc49 https://t.co/4LBhE4zEQb\n\u26a1Fast TRADE\u26a1\ud83d\udc49 https://t.co/HaJvg8nHNg\ud83d\udc8e\n\u2015It is the best platform so far\u2015 https://t.co/vXTkrZBJYw",
+        "\ud83e\udd16 FDV Alert \ud83e\udd16\n\n\u2728 - $void\n\ud83d\udd25 - kqgL2M58c4nSo2S75u6q2nJypwhKuJpVRrdc7xcQMN5\n\ud83d\udcc8 - 10MIN \ud83c\udd99 +$182.8K(+121.9%) \n\ud83c\udf08 - TXS : 540/$40.2K\n\ud83d\udd0a Signal \ud83d\udc49 https://t.co/26mIKVxjij\n\u26a1Fast TRADE\u26a1\ud83d\udc49 https://t.co/8StVPTG7QT\ud83d\udc8e\n\u2015X Tracker \u2013 Spot trends before everyone else\u2015"
+      ],
+      "verification": {
+        "exists": false,
+        "symbol": "\ud83d\udcc8USDT"
+      }
+    },
+    {
+      "symbol": "\ud83d\ude80",
+      "opportunity_score": 108.86333333333333,
+      "opportunity_type": "established",
+      "avg_sentiment": 0.29444444444444445,
+      "total_engagement": 3,
+      "mention_count": 6,
+      "profit_signals": 7,
+      "new_coin_signals": 0,
+      "sample_tweets": [
+        "$ASTRA makes it easy: Claim rewards, no strings attached. \ud83d\ude80\n\nHolding strong: $HEX, $PYR, $BNB, $KAS, $VET, $XRP, $ICP, $DOGE, $DOT, $XLM, $TARA, $QNT, $UNI, $LINK, $CHZ, $AZERO, $SHIB, $THETA, $MANA, $BRISE, $PEPE, $ALGO, $RUNE, $AVAX. \ud83d\udcb8 https://t.co/QiP9P1DDRF",
+        "\ud83d\udca1 Sm\ud83d\udcb0 buys-&gt;12.52SOL \ud83d\ude80\n\n\u251c\ud83d\udc8e : $BIGIFTRUE \n\u251c\ud83d\udcb9 CA: HGXgk6bqPSCSgoQSae4sTi1dguoTnC6gKzX17aU4dBLV\n\u251c\ud83d\udd2e MKT.Cap : 3.7M\n\u251c\ud83c\udf20 TXs/Vol: 2069/$959.7K\n\ud83d\udce3 Alert \ud83d\udc49 https://t.co/Gk3HOqKdvT \n\ud83e\udd16 Quick buy \ud83d\udc49 https://t.co/HPoinqcMNl\ud83d\udc8e\n- Scroll through the trading page for details -",
+        "$ETH is BOOMIN'  \n\nA break above this line could teleport $ETH to 4K\ud83d\ude80\n\nAre we \"coded\"?\nhttps://t.co/P8OJq7hzcX https://t.co/1Dhlsd6sDG https://t.co/GYeVBgAU5G"
+      ],
+      "verification": {
+        "exists": false,
+        "symbol": "\ud83d\ude80USDT"
+      }
+    },
+    {
+      "symbol": "meme",
+      "opportunity_score": 105.27166193181819,
+      "opportunity_type": "new_coin",
+      "avg_sentiment": 0.3423887310606061,
+      "total_engagement": 0,
+      "mention_count": 8,
+      "profit_signals": 4,
+      "new_coin_signals": 1,
+      "sample_tweets": [
+        "@SenseiBR_btc \ud83d\udc38 Meet @FrogeBNB THE FROG \u2013 the legendary Discord emoji is now a memecoin on BNB Chain!\n\nCA: 0x4258eae51CDFFa6099f1B991a129Fc26A4462Df5\n\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist",
+        "@TheMoonShow @FrogeBNB Like $PEPE\u2026 but greener \ud83c\udf3f\nCrazier \ud83e\udd2a\n\nCA: 0x4258eae51CDFFa6099f1B991a129Fc26A4462Df5\n\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist",
+        "@Ashcryptoreal \ud83d\udc38 Meet @FrogeBNB THE FROG \u2013 the legendary Discord emoji is now a memecoin on BNB Chain!\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist"
+      ],
+      "verification": {
+        "exists": true,
+        "symbol": "MEMEUSDT",
+        "price": 0.001972,
+        "change_24h": 1.86,
+        "volume_24h": 1671339305.0
+      }
+    },
+    {
+      "symbol": "memecoin",
+      "opportunity_score": 101.73904220779221,
+      "opportunity_type": "new_coin",
+      "avg_sentiment": 0.39130140692640686,
+      "total_engagement": 0,
+      "mention_count": 7,
+      "profit_signals": 4,
+      "new_coin_signals": 1,
+      "sample_tweets": [
+        "@SenseiBR_btc \ud83d\udc38 Meet @FrogeBNB THE FROG \u2013 the legendary Discord emoji is now a memecoin on BNB Chain!\n\nCA: 0x4258eae51CDFFa6099f1B991a129Fc26A4462Df5\n\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist",
+        "@TheMoonShow @FrogeBNB Like $PEPE\u2026 but greener \ud83c\udf3f\nCrazier \ud83e\udd2a\n\nCA: 0x4258eae51CDFFa6099f1B991a129Fc26A4462Df5\n\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist",
+        "@Ashcryptoreal \ud83d\udc38 Meet @FrogeBNB THE FROG \u2013 the legendary Discord emoji is now a memecoin on BNB Chain!\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist"
+      ],
+      "verification": {
+        "exists": false,
+        "symbol": "MEMECOINUSDT"
+      }
+    },
+    {
+      "symbol": "bitcoin",
+      "opportunity_score": 100.35720588235294,
+      "opportunity_type": "established",
+      "avg_sentiment": 0.17757352941176469,
+      "total_engagement": 3,
+      "mention_count": 17,
+      "profit_signals": 1,
+      "new_coin_signals": 0,
+      "sample_tweets": [
+        "\ud83d\udcca Net inflow from public companies buying BTC | Jun 11  \n\n\ud83d\udd35 Weekly Net Inflow: $145.76M\n\u26aa\ufe0f Weekly Bitcoin Net Inflow: 1,379.13\n\ud83d\udcb0 BTC Price: $110,192.75\n\nExplore more key information on #SoSoValue: https://t.co/A8Tvt7w9wq",
+        "@BlockFuel @thumz_up Great insights on $TZUP's Bitcoin strategy! @DavidSmithX1, your market perspective always helps cut through the noise. 19 BTC now with potential for 4K+ is wild\u2014shows how aggressive accumulation can play out. Excited to see where this goes!",
+        "@cb_doge Make 100%-1000% profits trading futures(crypto) and spot with our daily profitable signals\nto join our free group on telegram click on link on  bio...@nocklevs\n\n#bitcoin #cryptocurrency #btc #bnb"
+      ],
+      "verification": {
+        "exists": false,
+        "symbol": "BITCOINUSDT"
+      }
+    }
+  ],
+  "summary": {
+    "total_tweets": 100,
+    "analyzed_tweets": 100,
+    "total_opportunities": 33,
+    "verified_opportunities": 5,
+    "avg_sentiment": 0.25824438533688526,
+    "top_categories": {
+      "major": 141,
+      "potential_new": 80,
+      "meme": 36,
+      "profit_signals": 18,
+      "defi": 6,
+      "gaming": 3,
+      "new_coin_signals": 3
+    }
+  },
+  "analyzed_tweets": [
+    {
+      "id": 1932856305989132365,
+      "text": "@SenseiBR_btc \ud83d\udc38 Meet @FrogeBNB THE FROG \u2013 the legendary Discord emoji is now a memecoin on BNB Chain!\n\nCA: 0x4258eae51CDFFa6099f1B991a129Fc26A4462Df5\n\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist",
+      "created_at": "2025-06-11 17:43:48+00:00",
+      "author_id": 1823914524346552320,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 1.0,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "@SenseiBR_btc \ud83d\udc38 Meet @FrogeBNB TH"
+        },
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "BR_btc \ud83d\udc38 Meet @FrogeBNB THE FROG \u2013 the lege"
+        },
+        {
+          "keyword": "meme",
+          "category": "meme",
+          "context": "cord emoji is now a memecoin on BNB Chain!"
+        },
+        {
+          "keyword": "memecoin",
+          "category": "meme",
+          "context": "cord emoji is now a memecoin on BNB Chain!\n\nCA:"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856305233875290,
+      "text": "$ASTRA at $10? Easy. \ud83d\udcc8  \nSpoke with the team $100M MC is undervalued. Real utility, real upside. \ud83d\udc8e\n\nQ: Which low-cap are you most bullish on?  \n\nPortfolio: $BTC, $SOLANA, $HEX, $QUBIC, $BERRY, $SYNK, $INTX, $PROPC, $GRASS, $APES, $COR, $ETH, $BNB, $RSN, $BONK https://t.co/dfyG72XEWb",
+      "created_at": "2025-06-11 17:43:48+00:00",
+      "author_id": 1802811945193488384,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.3333333333333333,
+        "subjectivity": 0.48333333333333334,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "on?  \n\nPortfolio: $BTC, $SOLANA, $HEX, $QU"
+        },
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "RASS, $APES, $COR, $ETH, $BNB, $RSN, $BONK"
+        },
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "$APES, $COR, $ETH, $BNB, $RSN, $BONK https:"
+        },
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "Portfolio: $BTC, $SOLANA, $HEX, $QUBIC, $BER"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "Portfolio: $BTC, $SOLANA, $HEX, $QUBIC, $"
+        },
+        {
+          "keyword": "bonk",
+          "category": "meme",
+          "context": "$ETH, $BNB, $RSN, $BONK https://t.co/dfyG72"
+        },
+        {
+          "keyword": "ape",
+          "category": "meme",
+          "context": "X, $PROPC, $GRASS, $APES, $COR, $ETH, $BNB,"
+        },
+        {
+          "keyword": "\ud83d\udcc8",
+          "category": "profit_signals",
+          "context": "ASTRA at $10? Easy. \ud83d\udcc8  \nSpoke with the te"
+        },
+        {
+          "keyword": "bullish",
+          "category": "profit_signals",
+          "context": "ow-cap are you most bullish on?  \n\nPortfolio: $"
+        },
+        {
+          "keyword": "$ASTRA",
+          "category": "potential_new",
+          "context": "$ASTRA at $10? Easy. \ud83d\udcc8  \nS"
+        },
+        {
+          "keyword": "$BTC",
+          "category": "potential_new",
+          "context": "h on?  \n\nPortfolio: $BTC, $SOLANA, $HEX, $QU"
+        },
+        {
+          "keyword": "$SOLANA",
+          "category": "potential_new",
+          "context": "Portfolio: $BTC, $SOLANA, $HEX, $QUBIC, $BER"
+        },
+        {
+          "keyword": "$HEX",
+          "category": "potential_new",
+          "context": "lio: $BTC, $SOLANA, $HEX, $QUBIC, $BERRY, $S"
+        },
+        {
+          "keyword": "$QUBIC",
+          "category": "potential_new",
+          "context": "BTC, $SOLANA, $HEX, $QUBIC, $BERRY, $SYNK, $IN"
+        },
+        {
+          "keyword": "$BERRY",
+          "category": "potential_new",
+          "context": "LANA, $HEX, $QUBIC, $BERRY, $SYNK, $INTX, $PRO"
+        },
+        {
+          "keyword": "$SYNK",
+          "category": "potential_new",
+          "context": "EX, $QUBIC, $BERRY, $SYNK, $INTX, $PROPC, $GR"
+        },
+        {
+          "keyword": "$INTX",
+          "category": "potential_new",
+          "context": "BIC, $BERRY, $SYNK, $INTX, $PROPC, $GRASS, $A"
+        },
+        {
+          "keyword": "$PROPC",
+          "category": "potential_new",
+          "context": "ERRY, $SYNK, $INTX, $PROPC, $GRASS, $APES, $CO"
+        },
+        {
+          "keyword": "$GRASS",
+          "category": "potential_new",
+          "context": "YNK, $INTX, $PROPC, $GRASS, $APES, $COR, $ETH,"
+        },
+        {
+          "keyword": "$APES",
+          "category": "potential_new",
+          "context": "TX, $PROPC, $GRASS, $APES, $COR, $ETH, $BNB,"
+        },
+        {
+          "keyword": "$COR",
+          "category": "potential_new",
+          "context": "OPC, $GRASS, $APES, $COR, $ETH, $BNB, $RSN,"
+        },
+        {
+          "keyword": "$ETH",
+          "category": "potential_new",
+          "context": "GRASS, $APES, $COR, $ETH, $BNB, $RSN, $BONK"
+        },
+        {
+          "keyword": "$BNB",
+          "category": "potential_new",
+          "context": "$APES, $COR, $ETH, $BNB, $RSN, $BONK https:"
+        },
+        {
+          "keyword": "$RSN",
+          "category": "potential_new",
+          "context": ", $COR, $ETH, $BNB, $RSN, $BONK https://t.co"
+        },
+        {
+          "keyword": "$BONK",
+          "category": "potential_new",
+          "context": ", $ETH, $BNB, $RSN, $BONK https://t.co/dfyG72"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856304894357592,
+      "text": "\ud83d\udcca Net inflow from public companies buying BTC | Jun 11  \n\n\ud83d\udd35 Weekly Net Inflow: $145.76M\n\u26aa\ufe0f Weekly Bitcoin Net Inflow: 1,379.13\n\ud83d\udcb0 BTC Price: $110,192.75\n\nExplore more key information on #SoSoValue: https://t.co/A8Tvt7w9wq",
+      "created_at": "2025-06-11 17:43:48+00:00",
+      "author_id": 1840725760882974720,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.08333333333333333,
+        "subjectivity": 0.2611111111111111,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "$145.76M\n\u26aa\ufe0f Weekly Bitcoin Net Inflow: 1,379.1"
+        },
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "ic companies buying BTC | Jun 11  \n\n\ud83d\udd35 Weekl"
+        },
+        {
+          "keyword": "comp",
+          "category": "defi",
+          "context": "inflow from public companies buying BTC | J"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856302679830902,
+      "text": "$ASTRA makes it easy: Claim rewards, no strings attached. \ud83d\ude80\n\nHolding strong: $HEX, $PYR, $BNB, $KAS, $VET, $XRP, $ICP, $DOGE, $DOT, $XLM, $TARA, $QNT, $UNI, $LINK, $CHZ, $AZERO, $SHIB, $THETA, $MANA, $BRISE, $PEPE, $ALGO, $RUNE, $AVAX. \ud83d\udcb8 https://t.co/QiP9P1DDRF",
+      "created_at": "2025-06-11 17:43:47+00:00",
+      "author_id": 1857392942220025856,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.43333333333333335,
+        "subjectivity": 0.7833333333333333,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "trong: $HEX, $PYR, $BNB, $KAS, $VET, $XRP,"
+        },
+        {
+          "keyword": "dot",
+          "category": "major",
+          "context": "$XRP, $ICP, $DOGE, $DOT, $XLM, $TARA, $QNT,"
+        },
+        {
+          "keyword": "avax",
+          "category": "major",
+          "context": "EPE, $ALGO, $RUNE, $AVAX. \ud83d\udcb8 https://t.co/QiP"
+        },
+        {
+          "keyword": "link",
+          "category": "major",
+          "context": "$TARA, $QNT, $UNI, $LINK, $CHZ, $AZERO, $SHI"
+        },
+        {
+          "keyword": "uni",
+          "category": "defi",
+          "context": "$XLM, $TARA, $QNT, $UNI, $LINK, $CHZ, $AZER"
+        },
+        {
+          "keyword": "doge",
+          "category": "meme",
+          "context": "$VET, $XRP, $ICP, $DOGE, $DOT, $XLM, $TARA,"
+        },
+        {
+          "keyword": "shib",
+          "category": "meme",
+          "context": "INK, $CHZ, $AZERO, $SHIB, $THETA, $MANA, $BR"
+        },
+        {
+          "keyword": "pepe",
+          "category": "meme",
+          "context": "TA, $MANA, $BRISE, $PEPE, $ALGO, $RUNE, $AVA"
+        },
+        {
+          "keyword": "mana",
+          "category": "gaming",
+          "context": "RO, $SHIB, $THETA, $MANA, $BRISE, $PEPE, $AL"
+        },
+        {
+          "keyword": "\ud83d\ude80",
+          "category": "profit_signals",
+          "context": "o strings attached. \ud83d\ude80\n\nHolding strong: $H"
+        },
+        {
+          "keyword": "$ASTRA",
+          "category": "potential_new",
+          "context": "$ASTRA makes it easy: Clai"
+        },
+        {
+          "keyword": "$HEX",
+          "category": "potential_new",
+          "context": "\ud83d\ude80\n\nHolding strong: $HEX, $PYR, $BNB, $KAS,"
+        },
+        {
+          "keyword": "$PYR",
+          "category": "potential_new",
+          "context": "lding strong: $HEX, $PYR, $BNB, $KAS, $VET,"
+        },
+        {
+          "keyword": "$BNB",
+          "category": "potential_new",
+          "context": "strong: $HEX, $PYR, $BNB, $KAS, $VET, $XRP,"
+        },
+        {
+          "keyword": "$KAS",
+          "category": "potential_new",
+          "context": ": $HEX, $PYR, $BNB, $KAS, $VET, $XRP, $ICP,"
+        },
+        {
+          "keyword": "$VET",
+          "category": "potential_new",
+          "context": ", $PYR, $BNB, $KAS, $VET, $XRP, $ICP, $DOGE,"
+        },
+        {
+          "keyword": "$XRP",
+          "category": "potential_new",
+          "context": ", $BNB, $KAS, $VET, $XRP, $ICP, $DOGE, $DOT,"
+        },
+        {
+          "keyword": "$ICP",
+          "category": "potential_new",
+          "context": ", $KAS, $VET, $XRP, $ICP, $DOGE, $DOT, $XLM,"
+        },
+        {
+          "keyword": "$DOGE",
+          "category": "potential_new",
+          "context": ", $VET, $XRP, $ICP, $DOGE, $DOT, $XLM, $TARA,"
+        },
+        {
+          "keyword": "$DOT",
+          "category": "potential_new",
+          "context": "$XRP, $ICP, $DOGE, $DOT, $XLM, $TARA, $QNT,"
+        },
+        {
+          "keyword": "$XLM",
+          "category": "potential_new",
+          "context": "$ICP, $DOGE, $DOT, $XLM, $TARA, $QNT, $UNI,"
+        },
+        {
+          "keyword": "$TARA",
+          "category": "potential_new",
+          "context": "$DOGE, $DOT, $XLM, $TARA, $QNT, $UNI, $LINK,"
+        },
+        {
+          "keyword": "$QNT",
+          "category": "potential_new",
+          "context": "$DOT, $XLM, $TARA, $QNT, $UNI, $LINK, $CHZ,"
+        },
+        {
+          "keyword": "$UNI",
+          "category": "potential_new",
+          "context": "$XLM, $TARA, $QNT, $UNI, $LINK, $CHZ, $AZER"
+        },
+        {
+          "keyword": "$LINK",
+          "category": "potential_new",
+          "context": "$TARA, $QNT, $UNI, $LINK, $CHZ, $AZERO, $SHI"
+        },
+        {
+          "keyword": "$CHZ",
+          "category": "potential_new",
+          "context": "$QNT, $UNI, $LINK, $CHZ, $AZERO, $SHIB, $TH"
+        },
+        {
+          "keyword": "$AZERO",
+          "category": "potential_new",
+          "context": "$UNI, $LINK, $CHZ, $AZERO, $SHIB, $THETA, $MA"
+        },
+        {
+          "keyword": "$SHIB",
+          "category": "potential_new",
+          "context": "LINK, $CHZ, $AZERO, $SHIB, $THETA, $MANA, $BR"
+        },
+        {
+          "keyword": "$THETA",
+          "category": "potential_new",
+          "context": "CHZ, $AZERO, $SHIB, $THETA, $MANA, $BRISE, $PE"
+        },
+        {
+          "keyword": "$MANA",
+          "category": "potential_new",
+          "context": "ERO, $SHIB, $THETA, $MANA, $BRISE, $PEPE, $AL"
+        },
+        {
+          "keyword": "$BRISE",
+          "category": "potential_new",
+          "context": "HIB, $THETA, $MANA, $BRISE, $PEPE, $ALGO, $RUN"
+        },
+        {
+          "keyword": "$PEPE",
+          "category": "potential_new",
+          "context": "ETA, $MANA, $BRISE, $PEPE, $ALGO, $RUNE, $AVA"
+        },
+        {
+          "keyword": "$ALGO",
+          "category": "potential_new",
+          "context": "ANA, $BRISE, $PEPE, $ALGO, $RUNE, $AVAX. \ud83d\udcb8 ht"
+        },
+        {
+          "keyword": "$RUNE",
+          "category": "potential_new",
+          "context": "RISE, $PEPE, $ALGO, $RUNE, $AVAX. \ud83d\udcb8 https://t"
+        },
+        {
+          "keyword": "$AVAX",
+          "category": "potential_new",
+          "context": "PEPE, $ALGO, $RUNE, $AVAX. \ud83d\udcb8 https://t.co/QiP"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856301920661607,
+      "text": "@bloop_sol @thep33l Finallt got on the bandwagon! \ud83d\ude4c\ud83c\udffd\ud83d\ude4c\ud83c\udffd",
+      "created_at": "2025-06-11 17:43:47+00:00",
+      "author_id": 1484003169810194435,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "@bloop_sol @thep33l Finallt go"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856300108722320,
+      "text": "\ud83d\udca1 Sm\ud83d\udcb0 buys-&gt;12.52SOL \ud83d\ude80\n\n\u251c\ud83d\udc8e : $BIGIFTRUE \n\u251c\ud83d\udcb9 CA: HGXgk6bqPSCSgoQSae4sTi1dguoTnC6gKzX17aU4dBLV\n\u251c\ud83d\udd2e MKT.Cap : 3.7M\n\u251c\ud83c\udf20 TXs/Vol: 2069/$959.7K\n\ud83d\udce3 Alert \ud83d\udc49 https://t.co/Gk3HOqKdvT \n\ud83e\udd16 Quick buy \ud83d\udc49 https://t.co/HPoinqcMNl\ud83d\udc8e\n- Scroll through the trading page for details -",
+      "created_at": "2025-06-11 17:43:47+00:00",
+      "author_id": 2522384394,
+      "retweet_count": 1,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.3333333333333333,
+        "subjectivity": 0.5,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "\ud83d\udca1 Sm\ud83d\udcb0 buys-&gt;12.52SOL \ud83d\ude80\n\n\u251c\ud83d\udc8e : $BIGIFTRUE"
+        },
+        {
+          "keyword": "\ud83d\ude80",
+          "category": "profit_signals",
+          "context": "\ud83d\udcb0 buys-&gt;12.52SOL \ud83d\ude80\n\n\u251c\ud83d\udc8e : $BIGIFTRUE \n\u251c"
+        },
+        {
+          "keyword": "$BIGIFTRUE",
+          "category": "potential_new",
+          "context": "gt;12.52SOL \ud83d\ude80\n\n\u251c\ud83d\udc8e : $BIGIFTRUE \n\u251c\ud83d\udcb9 CA: HGXgk6bqPSC"
+        }
+      ],
+      "engagement_score": 3
+    },
+    {
+      "id": 1932856297898103047,
+      "text": "@ada_lluch Africans are most noisy in the very early mornings. So he is used to it. That could not have been the reason.",
+      "created_at": "2025-06-11 17:43:46+00:00",
+      "author_id": 1883100566,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.315,
+        "subjectivity": 0.445,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "ada",
+          "category": "major",
+          "context": "@ada_lluch Africans are"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856296526787077,
+      "text": "Holding $UBC feels like front-row tickets at the World Cup.\n#BNB #Web3 #cryptocurrency",
+      "created_at": "2025-06-11 17:43:46+00:00",
+      "author_id": 1892006323170299904,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "at the World Cup.\n#BNB #Web3 #cryptocurren"
+        },
+        {
+          "keyword": "$UBC",
+          "category": "potential_new",
+          "context": "Holding $UBC feels like front-ro"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856295880864194,
+      "text": "\u26a0\ufe0f If someone asks for fees on #Synlenza or #TXEX, double-check. It could be a scam!\n#CryptoScam #CryptoRecovery #Capixtrade #Paobc #SOLANA #crpobase https://t.co/YQ580BIHO9",
+      "created_at": "2025-06-11 17:43:46+00:00",
+      "author_id": 1702230252171268097,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "#Capixtrade #Paobc #SOLANA #crpobase https://t"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "#Capixtrade #Paobc #SOLANA #crpobase https:"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856295389798626,
+      "text": "@BlockFuel @thumz_up Great insights on $TZUP's Bitcoin strategy! @DavidSmithX1, your market perspective always helps cut through the noise. 19 BTC now with potential for 4K+ is wild\u2014shows how aggressive accumulation can play out. Excited to see where this goes!",
+      "created_at": "2025-06-11 17:43:46+00:00",
+      "author_id": 1923412143375777792,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.4895833333333333,
+        "subjectivity": 0.8333333333333334,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "insights on $TZUP's Bitcoin strategy! @DavidSmi"
+        },
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "rough the noise. 19 BTC now with potential"
+        },
+        {
+          "keyword": "$TZUP",
+          "category": "potential_new",
+          "context": "p Great insights on $TZUP's Bitcoin strategy!"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856294421246108,
+      "text": "@0xdirichlet @solana @sanctumso \u2665\ufe0f\n\nthe Sphere SOL is Good SOL",
+      "created_at": "2025-06-11 17:43:45+00:00",
+      "author_id": 1359961837576597506,
+      "retweet_count": 0,
+      "like_count": 1,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.7,
+        "subjectivity": 0.6000000000000001,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "@0xdirichlet @solana @sanctumso \u2665\ufe0f\n\nthe"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "@0xdirichlet @solana @sanctumso \u2665\ufe0f\n\nt"
+        }
+      ],
+      "engagement_score": 1
+    },
+    {
+      "id": 1932856294261625206,
+      "text": "@cb_doge Make 100%-1000% profits trading futures(crypto) and spot with our daily profitable signals\nto join our free group on telegram click on link on  bio...@nocklevs\n\n#bitcoin #cryptocurrency #btc #bnb",
+      "created_at": "2025-06-11 17:43:45+00:00",
+      "author_id": 938724480507043840,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.2,
+        "subjectivity": 0.4,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "bio...@nocklevs\n\n#bitcoin #cryptocurrency #bt"
+        },
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "in #cryptocurrency #btc #bnb"
+        },
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "ryptocurrency #btc #bnb"
+        },
+        {
+          "keyword": "link",
+          "category": "major",
+          "context": "n telegram click on link on  bio...@nocklevs"
+        },
+        {
+          "keyword": "doge",
+          "category": "meme",
+          "context": "@cb_doge Make 100%-1000% pro"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856293749883143,
+      "text": "HODLers! @satlayer lets your #BTC flex in #DeFi. Restake, secure dApps, &amp; stack sats! SiliBoB Valley\u2019s the place to YAP LOUDLY! \ufffc\ufffc #SatLayer",
+      "created_at": "2025-06-11 17:43:45+00:00",
+      "author_id": 1788353795015016448,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.3125,
+        "subjectivity": 0.7,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "satlayer lets your #BTC flex in #DeFi. Rest"
+        },
+        {
+          "keyword": "hodl",
+          "category": "meme",
+          "context": "HODLers! @satlayer lets"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856292554498063,
+      "text": "@19teen_eth @yeet In YEET we gamble!!",
+      "created_at": "2025-06-11 17:43:45+00:00",
+      "author_id": 1094743212747558912,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@19teen_eth @yeet In YEET we ga"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856290617012660,
+      "text": "@sharafi_eth GM king\ud83e\udee1\ud83d\udc99",
+      "created_at": "2025-06-11 17:43:45+00:00",
+      "author_id": 900887037649268737,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@sharafi_eth GM king\ud83e\udee1\ud83d\udc99"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856290616729854,
+      "text": "\u2705Mary's best method! 2-10 ETH weekly! You're just in time \n\n\ud83d\udd17: https://t.co/EraQdMfAUw \n\n\ud83e\ude76Friends: \n\nn2n8TafD @CodyDriscoll7 @Kingsman_007 @victorjorne @justinlacky",
+      "created_at": "2025-06-11 17:43:45+00:00",
+      "author_id": 1927261010592739328,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 0.3,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "\u2705Mary's best method! 2-10 ETH weekly!"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856289853382723,
+      "text": "If you\u2019ve been misled by #YieldcoinPro or #CrypTechZone, stay calm and act wisely\u2014begin your recovery process now.\n#CryptoScam #CryptoRecovery #BTC #Hacked #Scam #Coinbase \ud83d\udea8#Fextap #crpobase #RomanceScam https://t.co/Bhz0qLLnm7",
+      "created_at": "2025-06-11 17:43:44+00:00",
+      "author_id": 1774797736769953792,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.30000000000000004,
+        "subjectivity": 0.75,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "am #CryptoRecovery #BTC #Hacked #Scam #Coin"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856289501327388,
+      "text": "@assasin_eth Happy belated birthday assasin",
+      "created_at": "2025-06-11 17:43:44+00:00",
+      "author_id": 1808489930374754304,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.8,
+        "subjectivity": 1.0,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@assasin_eth Happy belated birth"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856289195143197,
+      "text": "@Solana_100x lets gooo",
+      "created_at": "2025-06-11 17:43:44+00:00",
+      "author_id": 1864563917156175876,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "@Solana_100x lets gooo"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "@Solana_100x lets gooo"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856288100470973,
+      "text": "@TheGoldPrairie Yeah, the dollar's dominance is definitely being questioned, and Bitcoin could be part of the shift. @CameronWest38 has talked about markets reacting to this too. Wild times.",
+      "created_at": "2025-06-11 17:43:44+00:00",
+      "author_id": 1923408199153012736,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.05,
+        "subjectivity": 0.45,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "ing questioned, and Bitcoin could be part of th"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856285331947724,
+      "text": "\u2705Mary's best method! 2-10 ETH weekly! You're just in time \n\n\ud83d\udd17: https://t.co/RAp7yUh0W6 \n\n\ud83e\ude76Friends: \n\nVgLVfLWI @Armando89332966 @D_Gilliii @ScottyScot_hex @Stuardo36745433",
+      "created_at": "2025-06-11 17:43:43+00:00",
+      "author_id": 1927259341083533313,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 0.3,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "\u2705Mary's best method! 2-10 ETH weekly!"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856285202161899,
+      "text": "@TheMoonShow @FrogeBNB Like $PEPE\u2026 but greener \ud83c\udf3f\nCrazier \ud83e\udd2a\n\nCA: 0x4258eae51CDFFa6099f1B991a129Fc26A4462Df5\n\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist",
+      "created_at": "2025-06-11 17:43:43+00:00",
+      "author_id": 1823914524346552320,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "@TheMoonShow @FrogeBNB Like $PEPE\u2026 but gre"
+        },
+        {
+          "keyword": "pepe",
+          "category": "meme",
+          "context": "how @FrogeBNB Like $PEPE\u2026 but greener \ud83c\udf3f\nCraz"
+        },
+        {
+          "keyword": "meme",
+          "category": "meme",
+          "context": "26A4462Df5\n\n#FROGE #Memecoin #BNB #CryptoGiv"
+        },
+        {
+          "keyword": "memecoin",
+          "category": "meme",
+          "context": "26A4462Df5\n\n#FROGE #Memecoin #BNB #CryptoGiveawa"
+        },
+        {
+          "keyword": "moon",
+          "category": "profit_signals",
+          "context": "@TheMoonShow @FrogeBNB Like"
+        },
+        {
+          "keyword": "$PEPE",
+          "category": "potential_new",
+          "context": "Show @FrogeBNB Like $PEPE\u2026 but greener \ud83c\udf3f\nCraz"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856284858233182,
+      "text": "@purple_bitcoin_ Fomo and Supply shock are a heck of a thing \ud83e\udee1\ud83d\udc9c $PBTC https://t.co/ueVctg2dl1",
+      "created_at": "2025-06-11 17:43:43+00:00",
+      "author_id": 1683560417702957059,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "@purple_bitcoin_ Fomo and Supply sh"
+        },
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "eck of a thing \ud83e\udee1\ud83d\udc9c $PBTC https://t.co/ueVctg"
+        },
+        {
+          "keyword": "$PBTC",
+          "category": "potential_new",
+          "context": "heck of a thing \ud83e\udee1\ud83d\udc9c $PBTC https://t.co/ueVctg"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856283746742377,
+      "text": "@BNBCHAIN The first time I interacted with DeFi on BNB Chain, I felt something rare\u2014absolute financial freedom, no banks, no limits, just pure autonomy. @bnbchain",
+      "created_at": "2025-06-11 17:43:43+00:00",
+      "author_id": 1379152562033659915,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.15476190476190477,
+        "subjectivity": 0.27777777777777773,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "NB Chain, I felt something rare\u2014absolute fi"
+        },
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "@BNBCHAIN The first time"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "lt something rare\u2014absolute financial freedo"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856283507666954,
+      "text": "@eternxvm @fragmetric @KaminoFinance @orca_so @FragChad @sangdotsol @SolZacque @hikoritahdi @NFTxSira @koed_the_kat @jito_sol nice thread \\ gribo4ki dao approved \ud83c\udf44 \u2705",
+      "created_at": "2025-06-11 17:43:43+00:00",
+      "author_id": 1654658419876397057,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.6,
+        "subjectivity": 1.0,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "o @FragChad @sangdotsol @SolZacque @hikorit"
+        },
+        {
+          "keyword": "dot",
+          "category": "major",
+          "context": "a_so @FragChad @sangdotsol @SolZacque @hiko"
+        },
+        {
+          "keyword": "nft",
+          "category": "gaming",
+          "context": "acque @hikoritahdi @NFTxSira @koed_the_kat"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856281838334220,
+      "text": "@simulate_sol larp you changed your X handle 5 times",
+      "created_at": "2025-06-11 17:43:42+00:00",
+      "author_id": 1470788508,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "@simulate_sol larp you changed yo"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856281678696856,
+      "text": "JUST IN: #Cardano $ADA Founder Charles Hoskinson says \"the one musician I know the best that's super into crypto is Sean Lennon, he's such a cool dude and a very good musician, that's John Lennon's son.\" https://t.co/AGllQ7zyud",
+      "created_at": "2025-06-11 17:43:42+00:00",
+      "author_id": 1677472228311482368,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.5186666666666666,
+        "subjectivity": 0.5793333333333334,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "cardano",
+          "category": "major",
+          "context": "JUST IN: #Cardano $ADA Founder Charle"
+        },
+        {
+          "keyword": "ada",
+          "category": "major",
+          "context": "JUST IN: #Cardano $ADA Founder Charles Hos"
+        },
+        {
+          "keyword": "$ADA",
+          "category": "potential_new",
+          "context": "JUST IN: #Cardano $ADA Founder Charles Hos"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856281439576568,
+      "text": "@YazanXBT He is going to buy $DOG (BITCOIN).",
+      "created_at": "2025-06-11 17:43:42+00:00",
+      "author_id": 1647860174126972929,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "going to buy $DOG (BITCOIN)."
+        },
+        {
+          "keyword": "$DOG",
+          "category": "potential_new",
+          "context": "He is going to buy $DOG (BITCOIN)."
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856279581798502,
+      "text": "@dadx_btc thank youuuu ser!",
+      "created_at": "2025-06-11 17:43:42+00:00",
+      "author_id": 1505137639812628483,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "@dadx_btc thank youuuu ser!"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856277082009812,
+      "text": "@Stillhere583 @CryptoGemRnld @ZIGChain Make 100%-1000% profits trading futures(crypto) and spot with our daily profitable signals\nto join our free group on telegram click on link on  bio...@nocklevs\n\n#bitcoin #cryptocurrency #btc #bnb",
+      "created_at": "2025-06-11 17:43:41+00:00",
+      "author_id": 938724480507043840,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.2,
+        "subjectivity": 0.4,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "bio...@nocklevs\n\n#bitcoin #cryptocurrency #bt"
+        },
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "in #cryptocurrency #btc #bnb"
+        },
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "ryptocurrency #btc #bnb"
+        },
+        {
+          "keyword": "link",
+          "category": "major",
+          "context": "n telegram click on link on  bio...@nocklevs"
+        },
+        {
+          "keyword": "gem",
+          "category": "meme",
+          "context": "Stillhere583 @CryptoGemRnld @ZIGChain Make"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856276800712717,
+      "text": "\u26a0\ufe0f If someone asks for fees on #Synlenza or #TXEX, double-check. It could be a scam!\n#CryptoScam #CryptoRecovery #Capixtrade #Paobc #SOLANA #crpobase https://t.co/NcTkAAZI79",
+      "created_at": "2025-06-11 17:43:41+00:00",
+      "author_id": 1702230252171268097,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "#Capixtrade #Paobc #SOLANA #crpobase https://t"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "#Capixtrade #Paobc #SOLANA #crpobase https:"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856275479769537,
+      "text": "Hoteruuu character with @gibthefrog and @bonk_inu joining hand in hand to regib solana \ud83d\udc38 https://t.co/KaYniqiV5W",
+      "created_at": "2025-06-11 17:43:41+00:00",
+      "author_id": 1885982363680972800,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "nd in hand to regib solana \ud83d\udc38 https://t.co/KaYn"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "nd in hand to regib solana \ud83d\udc38 https://t.co/K"
+        },
+        {
+          "keyword": "bonk",
+          "category": "meme",
+          "context": "th @gibthefrog and @bonk_inu joining hand in"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856274380554541,
+      "text": "\u2705Mary's best method! 2-10 ETH weekly! You're just in time \n\n\ud83d\udd17: https://t.co/bQoi0Uxcvo \n\n\ud83e\ude76Friends: \n\n9RRe0aun @frhnluqmann @nristik8 @JakiLine8 @Air_Hammond",
+      "created_at": "2025-06-11 17:43:41+00:00",
+      "author_id": 1927262209350012928,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 0.3,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "\u2705Mary's best method! 2-10 ETH weekly!"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856273583698215,
+      "text": "@ololade_eth @TacBuild Ahh, well. \nFairs.",
+      "created_at": "2025-06-11 17:43:41+00:00",
+      "author_id": 1346420845535756289,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@ololade_eth @TacBuild Ahh, well"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856273147736471,
+      "text": "@benwrightz @Cointelegraph The chart in the Cointelegraph post likely comes from CoinGlass, a platform known for real-time cryptocurrency futures data, as cited in recent news like Cryptopotato. CoinAnalyse is another possible source, offering similar aggregated ETH open interest charts. However,",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 1720665183188922368,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.63,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "similar aggregated ETH open interest chart"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856272992321916,
+      "text": "@Solphendukaa Akho kudelela APHA Wena SOL!!! They must fokof they old enough \u2620\ufe0f tshini",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 1115644728664399873,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.05,
+        "subjectivity": 0.35,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "@Solphendukaa Akho kudel"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856272870649949,
+      "text": "@1SirCrypto Very true like eth",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 570441199,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.45499999999999996,
+        "subjectivity": 0.8450000000000001,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "ypto Very true like eth"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856272438829485,
+      "text": "@Ashcryptoreal \ud83d\udc38 Meet @FrogeBNB THE FROG \u2013 the legendary Discord emoji is now a memecoin on BNB Chain!\n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 1823914524346552320,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 1.0,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "toreal \ud83d\udc38 Meet @FrogeBNB THE FROG \u2013 the lege"
+        },
+        {
+          "keyword": "meme",
+          "category": "meme",
+          "context": "cord emoji is now a memecoin on BNB Chain!\n#"
+        },
+        {
+          "keyword": "memecoin",
+          "category": "meme",
+          "context": "cord emoji is now a memecoin on BNB Chain!\n#FROG"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856271591661615,
+      "text": "Some days, everything aligns for traders:\n\n\u27a4ETH and BTC moving (0% spread and 0% price impact on MUX)\n\n\u27a4 Stacks with the 10% recall campaign discount\n\n\u27a4 Arbitrum perps volume surging\n\nDon't overthink it when the asymmetry is this clear. https://t.co/c12VDHZCIu",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 1193729338719395841,
+      "retweet_count": 1,
+      "like_count": 1,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.10000000000000002,
+        "subjectivity": 0.3833333333333333,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "traders:\n\n\u27a4ETH and BTC moving (0% spread a"
+        },
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "igns for traders:\n\n\u27a4ETH and BTC moving (0%"
+        }
+      ],
+      "engagement_score": 4
+    },
+    {
+      "id": 1932856271452925968,
+      "text": "@digitrabbits Congrats to those who were early. \nI will pick mine up for 100 ETH later",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 792568161484861440,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.05,
+        "subjectivity": 0.15,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "ick mine up for 100 ETH later"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856270396039458,
+      "text": "@funpepe_eth @jhekub @jackbutcher @jalilwahdat So so good \ud83e\udd0c\ud83e\udd0c",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 35018774,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.7,
+        "subjectivity": 0.6000000000000001,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@funpepe_eth @jhekub @jackbutche"
+        },
+        {
+          "keyword": "pepe",
+          "category": "meme",
+          "context": "@funpepe_eth @jhekub @jackbu"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856270219833470,
+      "text": "@ApeMP5 Why do I want to win?\nIt's pretty simple.\n\nI'm dedicated to building myself a career in the space and a SOL would help me achieve my investment dreams.\n\nPlus. It's Ape's free Crypto.\nI'm so in\ud83e\udd79\ud83d\ude02",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 1837377106201776128,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.36250000000000004,
+        "subjectivity": 0.6392857142857142,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "in the space and a SOL would help me achie"
+        },
+        {
+          "keyword": "ape",
+          "category": "meme",
+          "context": "@ApeMP5 Why do I want to"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856269880057914,
+      "text": "@Emdee_15 @legen_eth @TheDadbodtoken The enthusiasm for $DADBOD is palpable and infectious! Your unwavering optimism could very well be the catalyst that propels this token into remarkable heights. Let's keep riding this exhilarating wave!",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 1882500119003631616,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.45625,
+        "subjectivity": 0.6125,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@Emdee_15 @legen_eth @TheDadbodtoken The"
+        },
+        {
+          "keyword": "$DADBOD",
+          "category": "potential_new",
+          "context": "The enthusiasm for $DADBOD is palpable and inf"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856269804876069,
+      "text": "@sleepless_btc Up only now",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 1476710867165138944,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 1.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "@sleepless_btc Up only now"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856269737525504,
+      "text": "@NitroFrogOG Yo, that German Chocolate Cake vibe is sweet! If you\u2019re into transparent #memecoin communities, check out\n@catapultcorgi\non #Solana\u2014$CCC just dropped! Join the fun! #CCC",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 1756511924231999488,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.3072916666666667,
+        "subjectivity": 0.2833333333333334,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "@catapultcorgi\non #Solana\u2014$CCC just dropped!"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "@catapultcorgi\non #Solana\u2014$CCC just droppe"
+        },
+        {
+          "keyword": "uni",
+          "category": "defi",
+          "context": "arent #memecoin communities, check out\n@cat"
+        },
+        {
+          "keyword": "meme",
+          "category": "meme",
+          "context": "e into transparent #memecoin communities, ch"
+        },
+        {
+          "keyword": "memecoin",
+          "category": "meme",
+          "context": "e into transparent #memecoin communities, check"
+        },
+        {
+          "keyword": "just dropped",
+          "category": "new_coin_signals",
+          "context": "rgi\non #Solana\u2014$CCC just dropped! Join the fun! #CCC"
+        },
+        {
+          "keyword": "$CCC",
+          "category": "potential_new",
+          "context": "ultcorgi\non #Solana\u2014$CCC just dropped! Join"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856269494231369,
+      "text": "This year @eth_milano is going to be alpha-packed af\n\nQuestion is: are you going anon?",
+      "created_at": "2025-06-11 17:43:40+00:00",
+      "author_id": 1342923842675740672,
+      "retweet_count": 0,
+      "like_count": 1,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "This year @eth_milano is going to"
+        }
+      ],
+      "engagement_score": 1
+    },
+    {
+      "id": 1932856269318045780,
+      "text": "\u2705Mary's best method! 2-10 ETH weekly! You're just in time \n\n\ud83d\udd17: https://t.co/5JzLwZmhul \n\n\ud83e\ude76Friends: \n\neoTn2tvi @bellrajr @Hydra_Pad @harryam_ @CruisesPeony",
+      "created_at": "2025-06-11 17:43:39+00:00",
+      "author_id": 1927262903788298240,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 0.3,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "\u2705Mary's best method! 2-10 ETH weekly!"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856268823072842,
+      "text": "@ngoziora @realDonaldTrump @MELANIATRUMP @USBDPM @USArmy @IDF @officialABAT @HQNigerianArmy @DHQNigeria @cnnbrk @cnni Nne di ma , Ada Biafra we are with you keep going \ud83d\udcaa\ud83c\udf05\ud83d\ude4c\ud83d\ude4c\ud83d\ude4c\ud83d\udcaa\ud83d\udcaa\ud83d\ude4f\ud83c\udfff\ud83d\ude4f\ud83c\udfff\ud83d\ude4f\ud83c\udfff\ud83d\ude4c\ud83d\ude4c\ud83d\ude4c\ud83d\udcaa\ud83d\udcaa\ud83d\udcaa\ud83d\udcaa\ud83c\udf05\ud83c\udf05\ud83c\udf05\ud83c\udf05\ud83c\udf05",
+      "created_at": "2025-06-11 17:43:39+00:00",
+      "author_id": 1639241272740257793,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "ada",
+          "category": "major",
+          "context": "k @cnni Nne di ma , Ada Biafra we are with"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856268433092722,
+      "text": "$ETH is BOOMIN'  \n\nA break above this line could teleport $ETH to 4K\ud83d\ude80\n\nAre we \"coded\"?\nhttps://t.co/P8OJq7hzcX https://t.co/1Dhlsd6sDG https://t.co/GYeVBgAU5G",
+      "created_at": "2025-06-11 17:43:39+00:00",
+      "author_id": 1346579245670268928,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.1,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "$ETH is BOOMIN'  \n\nA bre"
+        },
+        {
+          "keyword": "\ud83d\ude80",
+          "category": "profit_signals",
+          "context": "teleport $ETH to 4K\ud83d\ude80\n\nAre we \"coded\"?\nht"
+        },
+        {
+          "keyword": "$ETH",
+          "category": "potential_new",
+          "context": "$ETH is BOOMIN'  \n\nA bre"
+        },
+        {
+          "keyword": "$ETH",
+          "category": "potential_new",
+          "context": "$ETH is BOOMIN'  \n\nA bre"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856267527348394,
+      "text": "\ud83e\udd16 FDV Alert \ud83e\udd16\n\n\ud83d\udcaf - $awra\n\ud83c\udf20 - 9ZeqEEsCT2WmBs18uV6E2kf9F3nHS2Heh1KAr8nhpump\n\ud83d\udcc8 - 10MIN \ud83c\udd99 +$14.9K(+310.5%) \n\ud83c\udfc6 - TXS : 221/$17.1K\n\ud83d\udd0a Signal \ud83d\udc49 https://t.co/4LBhE4zEQb\n\u26a1Fast TRADE\u26a1\ud83d\udc49 https://t.co/HaJvg8nHNg\ud83d\udc8e\n\u2015It is the best platform so far\u2015 https://t.co/vXTkrZBJYw",
+      "created_at": "2025-06-11 17:43:39+00:00",
+      "author_id": 4566987967,
+      "retweet_count": 1,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 0.3,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "\ud83d\udcc8",
+          "category": "profit_signals",
+          "context": "3nHS2Heh1KAr8nhpump\n\ud83d\udcc8 - 10MIN \ud83c\udd99 +$14.9K(+"
+        },
+        {
+          "keyword": "pump",
+          "category": "profit_signals",
+          "context": "2kf9F3nHS2Heh1KAr8nhpump\n\ud83d\udcc8 - 10MIN \ud83c\udd99 +$14.9K"
+        },
+        {
+          "keyword": "$AWRA",
+          "category": "potential_new",
+          "context": "\ud83e\udd16 FDV Alert \ud83e\udd16\n\n\ud83d\udcaf - $awra\n\ud83c\udf20 - 9ZeqEEsCT2WmBs1"
+        }
+      ],
+      "engagement_score": 3
+    },
+    {
+      "id": 1932856267011498183,
+      "text": "@edwinbarnesc Love this!!!! Would totally make sense why RC was so careful to use the word \u201cpurchased\u201d. QQ\u2026 how can $GME control the $BTC without \u201cowning\u201d it? As it is my understanding given the new 2025 reporting requirements the number owned and the change in value was required to be",
+      "created_at": "2025-06-11 17:43:39+00:00",
+      "author_id": 1711116147653738496,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.2590909090909091,
+        "subjectivity": 0.7011363636363637,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "n $GME control the $BTC without \u201cowning\u201d it"
+        },
+        {
+          "keyword": "$GME",
+          "category": "potential_new",
+          "context": "hased\u201d. QQ\u2026 how can $GME control the $BTC wi"
+        },
+        {
+          "keyword": "$BTC",
+          "category": "potential_new",
+          "context": "an $GME control the $BTC without \u201cowning\u201d it"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856265425944689,
+      "text": "USD1 is live on Solana. Stage 2 Airdrop is live.\n\nEligible based on your on-chain \u0430ctivity \u2014 and you're likely \u0456n:\n\n@bengodet841 @bertoshidotsui @MichaelCip79 @1393470543_ @AfroPunkCapital @ottothepoolboy @CryptoAltaria @gunxak \u0456pjll\n\nClaim b\u0435f\u043ere July 23:",
+      "created_at": "2025-06-11 17:43:39+00:00",
+      "author_id": 1930589206285271040,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0909090909090909,
+        "subjectivity": 0.6666666666666666,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "USD1 is live on Solana. Stage 2 Airdrop is"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "USD1 is live on Solana. Stage 2 Airdrop"
+        },
+        {
+          "keyword": "dot",
+          "category": "major",
+          "context": "engodet841 @bertoshidotsui @MichaelCip79 @1"
+        },
+        {
+          "keyword": "ido",
+          "category": "new_coin_signals",
+          "context": "bengodet841 @bertoshidotsui @MichaelCip79 @"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856264499081330,
+      "text": "@CryptoKing4Ever $ETH always run",
+      "created_at": "2025-06-11 17:43:38+00:00",
+      "author_id": 789044450580246528,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@CryptoKing4Ever $ETH always run"
+        },
+        {
+          "keyword": "$ETH",
+          "category": "potential_new",
+          "context": "@CryptoKing4Ever $ETH always run"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856264230354997,
+      "text": "\u2705Mary's best method! 2-10 ETH weekly! You're just in time \n\n\ud83d\udd17: https://t.co/k0Mjw7ofHI \n\n\ud83e\ude76Friends: \n\nlJDuXBK7 @apoloreis51128 @ParaDoXer0x @hewminwai @surfNDestroy",
+      "created_at": "2025-06-11 17:43:38+00:00",
+      "author_id": 1927260093709504512,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 0.3,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "\u2705Mary's best method! 2-10 ETH weekly!"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856263421145591,
+      "text": "We have a \ud83d\udcf1 \u2b06\ufe0f to announce. $wif $sol \n\n$nke $pltr $tsla $cvx $dal $grny $sbux $aapl \n\nBruce Harper? \ud83d\ude02 https://t.co/lqriURQrtp",
+      "created_at": "2025-06-11 17:43:38+00:00",
+      "author_id": 1916985243661377536,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "to announce. $wif $sol \n\n$nke $pltr $tsla"
+        },
+        {
+          "keyword": "wif",
+          "category": "meme",
+          "context": "\ud83d\udcf1 \u2b06\ufe0f to announce. $wif $sol \n\n$nke $pltr $"
+        },
+        {
+          "keyword": "$WIF",
+          "category": "potential_new",
+          "context": "a \ud83d\udcf1 \u2b06\ufe0f to announce. $wif $sol \n\n$nke $pltr $"
+        },
+        {
+          "keyword": "$SOL",
+          "category": "potential_new",
+          "context": "\ufe0f to announce. $wif $sol \n\n$nke $pltr $tsla"
+        },
+        {
+          "keyword": "$NKE",
+          "category": "potential_new",
+          "context": "nounce. $wif $sol \n\n$nke $pltr $tsla $cvx $d"
+        },
+        {
+          "keyword": "$PLTR",
+          "category": "potential_new",
+          "context": "e. $wif $sol \n\n$nke $pltr $tsla $cvx $dal $gr"
+        },
+        {
+          "keyword": "$TSLA",
+          "category": "potential_new",
+          "context": "f $sol \n\n$nke $pltr $tsla $cvx $dal $grny $sb"
+        },
+        {
+          "keyword": "$CVX",
+          "category": "potential_new",
+          "context": "$nke $pltr $tsla $cvx $dal $grny $sbux $a"
+        },
+        {
+          "keyword": "$DAL",
+          "category": "potential_new",
+          "context": "ke $pltr $tsla $cvx $dal $grny $sbux $aapl"
+        },
+        {
+          "keyword": "$GRNY",
+          "category": "potential_new",
+          "context": "ltr $tsla $cvx $dal $grny $sbux $aapl \n\nBruce"
+        },
+        {
+          "keyword": "$SBUX",
+          "category": "potential_new",
+          "context": "sla $cvx $dal $grny $sbux $aapl \n\nBruce Harpe"
+        },
+        {
+          "keyword": "$AAPL",
+          "category": "potential_new",
+          "context": "vx $dal $grny $sbux $aapl \n\nBruce Harper? \ud83d\ude02 h"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856263315951726,
+      "text": "New post in DegenPump Crypto Pump Signals: Binance Futures, ByBit USDT\n#AIXBT/USDT Take-Profit target 2 \nProfit: 120.4943% \nPeriod: 1 Days 4 Hours 34 Minutes https://t.co/CMOLUiHpPt",
+      "created_at": "2025-06-11 17:43:38+00:00",
+      "author_id": 889701908310630405,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.13636363636363635,
+        "subjectivity": 0.45454545454545453,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "binance",
+          "category": "major",
+          "context": "rypto Pump Signals: Binance Futures, ByBit USDT"
+        },
+        {
+          "keyword": "pump",
+          "category": "profit_signals",
+          "context": "New post in DegenPump Crypto Pump Signals"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856262930121139,
+      "text": "@saifullahjan25 @CryptoGemRnld @ZIGChain Make 100%-1000% profits trading futures(crypto) and spot with our daily profitable signals\nto join our free group on telegram click on link on  bio...@nocklevs\n\n#bitcoin #cryptocurrency #btc #bnb",
+      "created_at": "2025-06-11 17:43:38+00:00",
+      "author_id": 938724480507043840,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.2,
+        "subjectivity": 0.4,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "bio...@nocklevs\n\n#bitcoin #cryptocurrency #bt"
+        },
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "in #cryptocurrency #btc #bnb"
+        },
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "ryptocurrency #btc #bnb"
+        },
+        {
+          "keyword": "link",
+          "category": "major",
+          "context": "n telegram click on link on  bio...@nocklevs"
+        },
+        {
+          "keyword": "gem",
+          "category": "meme",
+          "context": "ifullahjan25 @CryptoGemRnld @ZIGChain Make"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856262867464431,
+      "text": "@McDonalds Yeah must be hard finding employees at this price bitcoin is at lol",
+      "created_at": "2025-06-11 17:43:38+00:00",
+      "author_id": 1527001190017515521,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.25416666666666665,
+        "subjectivity": 0.6208333333333333,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "oyees at this price bitcoin is at lol"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856262812971145,
+      "text": "@kyle_chasse Like $PEPE\u2026 but greener \ud83c\udf3f\nCrazier \ud83e\udd2a\nAnd 100% swamp-certified \ud83d\udc38\ud83d\udc9a\n@FrogeBNB \n#FROGE #Memecoin #BNB #CryptoGiveaway #Whitelist",
+      "created_at": "2025-06-11 17:43:38+00:00",
+      "author_id": 1823914524346552320,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "-certified \ud83d\udc38\ud83d\udc9a\n@FrogeBNB \n#FROGE #Memecoin #"
+        },
+        {
+          "keyword": "pepe",
+          "category": "meme",
+          "context": "@kyle_chasse Like $PEPE\u2026 but greener \ud83c\udf3f\nCraz"
+        },
+        {
+          "keyword": "meme",
+          "category": "meme",
+          "context": "@FrogeBNB \n#FROGE #Memecoin #BNB #CryptoGiv"
+        },
+        {
+          "keyword": "memecoin",
+          "category": "meme",
+          "context": "@FrogeBNB \n#FROGE #Memecoin #BNB #CryptoGiveawa"
+        },
+        {
+          "keyword": "$PEPE",
+          "category": "potential_new",
+          "context": "@kyle_chasse Like $PEPE\u2026 but greener \ud83c\udf3f\nCraz"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856262284251136,
+      "text": "@WaKuWaKu_Sol @enchanted_nfts @EMDogeDAO How to get on this",
+      "created_at": "2025-06-11 17:43:38+00:00",
+      "author_id": 1775848445103706112,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "@WaKuWaKu_Sol @enchanted_nfts @EM"
+        },
+        {
+          "keyword": "doge",
+          "category": "meme",
+          "context": "@enchanted_nfts @EMDogeDAO How to get on th"
+        },
+        {
+          "keyword": "nft",
+          "category": "gaming",
+          "context": "WaKu_Sol @enchanted_nfts @EMDogeDAO How to"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856262024405113,
+      "text": "@SebyCore @TheoriqAI @incyd__ @quan_eth @vicsclarissa @BizoveCrypto we are waiting https://t.co/Jy1kMIqBy4",
+      "created_at": "2025-06-11 17:43:38+00:00",
+      "author_id": 1669203681714274306,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "iqAI @incyd__ @quan_eth @vicsclarissa @Bizo"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856261231739353,
+      "text": "10 USDT\ud83d\ude0b\ud83d\udca5\u2764\ufe0f\u200d\ud83d\udd25BNB 0.014\nhttps://t.co/ZgvnIxFeWW\n\nCome and form your team and make money together!",
+      "created_at": "2025-06-11 17:43:38+00:00",
+      "author_id": 1926512195354988544,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "m and make money together!"
+        },
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "10 USDT\ud83d\ude0b\ud83d\udca5\u2764\ufe0f\u200d\ud83d\udd25BNB 0.014\nhttps://t.co/"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856260506087835,
+      "text": "\ud83d\udea8 JUST IN: Michael Saylor says, \u201cApple should buy #Bitcoin\u201d \ud83d\udc40\ud83c\udf89\ud83d\ude0f Meme about it on @meme2earn_com and earn! \ud83d\udcb8\n\nhttps://t.co/aWwOG7TTpc\n\n$NUDES $FLM",
+      "created_at": "2025-06-11 17:43:37+00:00",
+      "author_id": 1786330772904767488,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "\u201cApple should buy #Bitcoin\u201d \ud83d\udc40\ud83c\udf89\ud83d\ude0f Meme about it"
+        },
+        {
+          "keyword": "meme",
+          "category": "meme",
+          "context": "d buy #Bitcoin\u201d \ud83d\udc40\ud83c\udf89\ud83d\ude0f Meme about it on @meme2e"
+        },
+        {
+          "keyword": "$NUDES",
+          "category": "potential_new",
+          "context": "://t.co/aWwOG7TTpc\n\n$NUDES $FLM"
+        },
+        {
+          "keyword": "$FLM",
+          "category": "potential_new",
+          "context": "/aWwOG7TTpc\n\n$NUDES $FLM"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856258702286956,
+      "text": "\u2705Mary's best method! 2-10 ETH weekly! You're just in time \n\n\ud83d\udd17: https://t.co/LEthmXqX4R \n\n\ud83e\ude76Friends: \n\nTae0JpGf @RivotrilF @chaula_fanuel @SKiradis @JoeMaestro8",
+      "created_at": "2025-06-11 17:43:37+00:00",
+      "author_id": 1927262575734996992,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 0.3,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "\u2705Mary's best method! 2-10 ETH weekly!"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856258316427762,
+      "text": "@ApeMP5 @moon_on_eth gem to the moon \ud83d\ude80\ud83d\ude80\ud83d\ude80 https://t.co/JCp2O8Lx1s",
+      "created_at": "2025-06-11 17:43:37+00:00",
+      "author_id": 1865081217139236864,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@ApeMP5 @moon_on_eth gem to the moon \ud83d\ude80\ud83d\ude80\ud83d\ude80"
+        },
+        {
+          "keyword": "gem",
+          "category": "meme",
+          "context": "ApeMP5 @moon_on_eth gem to the moon \ud83d\ude80\ud83d\ude80\ud83d\ude80 htt"
+        },
+        {
+          "keyword": "ape",
+          "category": "meme",
+          "context": "@ApeMP5 @moon_on_eth gem"
+        },
+        {
+          "keyword": "moon",
+          "category": "profit_signals",
+          "context": "@ApeMP5 @moon_on_eth gem to the m"
+        },
+        {
+          "keyword": "\ud83d\ude80",
+          "category": "profit_signals",
+          "context": "eth gem to the moon \ud83d\ude80\ud83d\ude80\ud83d\ude80 https://t.co/JCp2"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856258291253379,
+      "text": "in our channel we will provide you daily 3 to 8 Signals in a day \ud83d\udc47\n https://t.co/5M5I24YSHg\n\njoin my telegram channel for more updates and signals\nJoin my telegram channel \n\ud83d\udc47\nhttps://t.co/5M5I24YSHg\nhttps://t.co/5M5I24YSHg\n\n#GOLD #xauusd #Profit #FOREX #XAUUSD #Trump #btc*ytnn",
+      "created_at": "2025-06-11 17:43:37+00:00",
+      "author_id": 1855833665328291840,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.25,
+        "subjectivity": 0.25,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "REX #XAUUSD #Trump #btc*ytnn"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856258039853082,
+      "text": "@cz_binance Web3 Education is important",
+      "created_at": "2025-06-11 17:43:37+00:00",
+      "author_id": 1464111214750019595,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.4,
+        "subjectivity": 1.0,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "binance",
+          "category": "major",
+          "context": "@cz_binance Web3 Education is i"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856257662345263,
+      "text": "\u2705Secure Bitcoin powered by 2PC-MPC and the future of BTCfi on SUI is almost here. Let\u2019s team up and make it happen\ud83d\udc40\ud83d\udc1d\n____________________________________      \n     \u2705\u0e04\u0e27\u0e32\u0e21\u0e1b\u0e25\u0e2d\u0e14\u0e20\u0e31\u0e22 Bitcoin \u0e02\u0e31\u0e1a\u0e40\u0e04\u0e25\u0e37\u0e48\u0e2d\u0e19\u0e42\u0e14\u0e22 2PC-MPC \u0e41\u0e25\u0e30\u0e2d\u0e19\u0e32\u0e04\u0e15\u0e02\u0e2d\u0e07 BTCfi \u0e1a\u0e19 SUI \u0e01\u0e33\u0e25\u0e31\u0e07\u0e21\u0e32\u0e16\u0e36\u0e07\u0e41\u0e25\u0e49\u0e27 https://t.co/DfSgv3772T https://t.co/vNw6K9tOoC",
+      "created_at": "2025-06-11 17:43:37+00:00",
+      "author_id": 1521031614821634048,
+      "retweet_count": 0,
+      "like_count": 1,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.125,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "\u2705Secure Bitcoin powered by 2PC-MPC"
+        },
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "C and the future of BTCfi on SUI is almost"
+        }
+      ],
+      "engagement_score": 1
+    },
+    {
+      "id": 1932856257381278058,
+      "text": "\u26a1QUICK TRADE\u26a1\ud83d\udc49 https://t.co/eWSaafjXta\n\ud83d\udce3 Alert \ud83d\udd17 https://t.co/ng2zXBPGK2 \ud83d\udc48\n\ud83d\udd03- Ultra-fast copy trading,executed within 0-1 blocks -\ud83d\udd03\n\n4Pxf6Y4cij9sfcxvW49nj2BiAGjdDp6CjgSJdC3fRKPx\n\ud83e\udde0 Smart Money - Buy-&gt;10.22SOL $MCGA \ud83e\udde0\n\n\ud83c\udf20 TXS : 88/$139.5K\n\ud83d\udc51 MC : 1.8M https://t.co/pwpmLSgupd",
+      "created_at": "2025-06-11 17:43:37+00:00",
+      "author_id": 3120054793,
+      "retweet_count": 1,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.21428571428571427,
+        "subjectivity": 0.6428571428571429,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "oney - Buy-&gt;10.22SOL $MCGA \ud83e\udde0\n\n\ud83c\udf20 TXS : 88"
+        },
+        {
+          "keyword": "$MCGA",
+          "category": "potential_new",
+          "context": "- Buy-&gt;10.22SOL $MCGA \ud83e\udde0\n\n\ud83c\udf20 TXS : 88/$139."
+        }
+      ],
+      "engagement_score": 3
+    },
+    {
+      "id": 1932856257377153399,
+      "text": "\u26a1QUICK TRADE\u26a1\ud83d\udc49 https://t.co/f9iIYwwxaS\n\ud83d\udce3 Alert \ud83d\udd17 https://t.co/XEPtqLDuOE \ud83d\udc48\n\ud83d\udd03- 30% lower fees than Photon/BullX -\ud83d\udd03\n\n4Pxf6Y4cij9sfcxvW49nj2BiAGjdDp6CjgSJdC3fRKPx\n\ud83e\udde0 Smart Money - Buy-&gt;34.84SOL $MCGA \ud83e\udde0\n\n\ud83d\udcb0 TXS : 88/$139.5K\n\ud83d\udcaf MC : 1.8M https://t.co/KhYw3br3wH",
+      "created_at": "2025-06-11 17:43:37+00:00",
+      "author_id": 1707457844,
+      "retweet_count": 1,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.21428571428571427,
+        "subjectivity": 0.6428571428571429,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "oney - Buy-&gt;34.84SOL $MCGA \ud83e\udde0\n\n\ud83d\udcb0 TXS : 88"
+        },
+        {
+          "keyword": "$MCGA",
+          "category": "potential_new",
+          "context": "- Buy-&gt;34.84SOL $MCGA \ud83e\udde0\n\n\ud83d\udcb0 TXS : 88/$139."
+        }
+      ],
+      "engagement_score": 3
+    },
+    {
+      "id": 1932856257268142502,
+      "text": "\ud83e\udd16 FDV Alert \ud83e\udd16\n\n\u2728 - $void\n\ud83d\udd25 - kqgL2M58c4nSo2S75u6q2nJypwhKuJpVRrdc7xcQMN5\n\ud83d\udcc8 - 10MIN \ud83c\udd99 +$182.8K(+121.9%) \n\ud83c\udf08 - TXS : 540/$40.2K\n\ud83d\udd0a Signal \ud83d\udc49 https://t.co/26mIKVxjij\n\u26a1Fast TRADE\u26a1\ud83d\udc49 https://t.co/8StVPTG7QT\ud83d\udc8e\n\u2015X Tracker \u2013 Spot trends before everyone else\u2015",
+      "created_at": "2025-06-11 17:43:37+00:00",
+      "author_id": 3291777480,
+      "retweet_count": 1,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "\ud83d\udcc8",
+          "category": "profit_signals",
+          "context": "pwhKuJpVRrdc7xcQMN5\n\ud83d\udcc8 - 10MIN \ud83c\udd99 +$182.8K("
+        },
+        {
+          "keyword": "$VOID",
+          "category": "potential_new",
+          "context": "\ud83e\udd16 FDV Alert \ud83e\udd16\n\n\u2728 - $void\n\ud83d\udd25 - kqgL2M58c4nSo2S"
+        }
+      ],
+      "engagement_score": 3
+    },
+    {
+      "id": 1932856256307327073,
+      "text": "@Gooddlovee @Babsphemii @Femibet @Stormonchain @Bad_Vikki @gathiaka_01 @KentoddyM @Ayowavvy @Cy_rax55 @Redcard420 @mashaweb3 @Derick_Connect @Justcrypto_eth @montenegro2345 @VeteransIAF @Nichola43029496 @CrisS16457661 @tweetbyDarren @PriscillaMabaso @Boostme50 Big moves deserve big collabs. Let\u2019s connect, grow, and crush it together. Follow @immortalhowwl and I\u2019ll return the favor!",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 1821527215177367552,
+      "retweet_count": 0,
+      "like_count": 1,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.1,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "Connect @Justcrypto_eth @montenegro2345 @Ve"
+        }
+      ],
+      "engagement_score": 1
+    },
+    {
+      "id": 1932856256072646863,
+      "text": "BNB 100X HUNTER!!! \n\nToken Address: 0xbed4dfa99f720331daffe0af86f1530e8f004444\n\nJoin the FREE 100X monitor here (Telegram is filtered with less spam): https://t.co/tUUFvvH8H2\n\nView on GMGN: https://t.co/aHqWg3UL74\n\nDYOR before apeing in!\n\n#fakeaio Links contain referral tags!",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 1338545737873960962,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0697916666666667,
+        "subjectivity": 0.43333333333333335,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "BNB 100X HUNTER!!! \n\nTo"
+        },
+        {
+          "keyword": "link",
+          "category": "major",
+          "context": "peing in!\n\n#fakeaio Links contain referral t"
+        },
+        {
+          "keyword": "ape",
+          "category": "meme",
+          "context": "g3UL74\n\nDYOR before apeing in!\n\n#fakeaio Li"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856256047288666,
+      "text": "\ud83d\udea8\ud83d\udcb0\ud83d\udcc8 \"Billionaire Paul Tudor Jones: Bitcoin is more than just a cryptocurrency, it's your best defense against the relentless onslaught of inflation! #BitcoinInflationFighter #ProtectYourWealth\"",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 1874946386107772928,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.75,
+        "subjectivity": 0.4,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "e Paul Tudor Jones: Bitcoin is more than just a"
+        },
+        {
+          "keyword": "\ud83d\udcc8",
+          "category": "profit_signals",
+          "context": "\ud83d\udea8\ud83d\udcb0\ud83d\udcc8 \"Billionaire Paul T"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856256038928746,
+      "text": "@Stoiiic Hello can u share the template of BTC so i can do the same setting in my Tradingview templates",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 796755945825112064,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.125,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "are the template of BTC so i can do the sam"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856255359672382,
+      "text": "\ud83d\udcca Net inflow from public companies buying BTC | Jun 12  @SoSoValueCrypto\n\n\ud83d\udd35 Weekly Net Inflow: $145.76M\n\u26aa\ufe0f Weekly Bitcoin Net Inflow: 1,379.13\n\ud83d\udcb0 BTC Price: $110,192.75\n\nExplore more key information on #SoSoValue: https://t.co/bpjDZMMtPk",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 1869263810240053248,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.08333333333333333,
+        "subjectivity": 0.2611111111111111,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "$145.76M\n\u26aa\ufe0f Weekly Bitcoin Net Inflow: 1,379.1"
+        },
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "ic companies buying BTC | Jun 12  @SoSoValu"
+        },
+        {
+          "keyword": "comp",
+          "category": "defi",
+          "context": "inflow from public companies buying BTC | J"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856255116366214,
+      "text": "Drop your $SOL address below! \ud83d\udc47\n\n\ud83d\udcb0 We\u2019ll send someone some SOL in 24h! (For real! \ud83d\ude80)\n\n\ud83d\udd25 Comment &amp; like our last post \ud83d\udccc\n\ud83c\udf81 Winner picked randomly!\n\nGood luck! \ud83c\udf40 #Solana #memecoin #crypto #trading",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 1932500598970331136,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.375,
+        "subjectivity": 0.32222222222222224,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "mly!\n\nGood luck! \ud83c\udf40 #Solana #memecoin #crypto #"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "Drop your $SOL address below! \ud83d\udc47\n\n\ud83d\udcb0"
+        },
+        {
+          "keyword": "meme",
+          "category": "meme",
+          "context": "od luck! \ud83c\udf40 #Solana #memecoin #crypto #tradin"
+        },
+        {
+          "keyword": "memecoin",
+          "category": "meme",
+          "context": "od luck! \ud83c\udf40 #Solana #memecoin #crypto #trading"
+        },
+        {
+          "keyword": "\ud83d\ude80",
+          "category": "profit_signals",
+          "context": "in 24h! (For real! \ud83d\ude80)\n\n\ud83d\udd25 Comment &amp; l"
+        },
+        {
+          "keyword": "$SOL",
+          "category": "potential_new",
+          "context": "Drop your $SOL address below! \ud83d\udc47\n\n\ud83d\udcb0"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856255112229017,
+      "text": "Just passed the 4 year anniversary of @ajscalia and I publishing this piece. I think it's aged rather well. Only question is if (in the long-term) HPC is able to become increasingly interruptible/location-agnostic to compete with bitcoin mining as an energy sink https://t.co/bBDiKvE6XL",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 960984793856045056,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 1,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.13333333333333333,
+        "subjectivity": 0.6749999999999999,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "tic to compete with bitcoin mining as an energy"
+        },
+        {
+          "keyword": "comp",
+          "category": "defi",
+          "context": "ocation-agnostic to compete with bitcoin min"
+        }
+      ],
+      "engagement_score": 2
+    },
+    {
+      "id": 1932856254159872092,
+      "text": "\u201cA simple coin launched by a useless dev must also be useless.\u201d\n\nTG: https://t.co/qsRPvZT9Rq\n\nCA: Chsqyzk3S4uaFdajsQNMp2FnJ4rQMzTd3ykvwyycbonk\n\nDex: https://t.co/s7Qh2HsNsZ",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 1924578815940100096,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": -0.3333333333333333,
+        "subjectivity": 0.2523809523809524,
+        "classification": "negative"
+      },
+      "mentions": [
+        {
+          "keyword": "bonk",
+          "category": "meme",
+          "context": "p2FnJ4rQMzTd3ykvwyycbonk\n\nDex: https://t.co/"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856253518118994,
+      "text": "@coinbureau He used to say bitcoin was inevitably going to zero.\n\nNow he's moving the goalposts to bitcoin as currency lol...",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 1557407310120685568,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.4,
+        "subjectivity": 0.85,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "reau He used to say bitcoin was inevitably goin"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856253421932714,
+      "text": "@Cipher2X @Cristiano @binance Free and limited sounds perfect",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 3167149161,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.4428571428571429,
+        "subjectivity": 0.6476190476190476,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "binance",
+          "category": "major",
+          "context": "ipher2X @Cristiano @binance Free and limited so"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856253358789041,
+      "text": "\u2705Mary's best method! 2-10 ETH weekly! You're just in time \n\n\ud83d\udd17: https://t.co/XNsOvtapNL \n\n\ud83e\ude76Friends: \n\nhTv0D11w @harisson @TUamtiaM_TuM @easy0kx_ @kdeboer7",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 1927262779548876800,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 0.3,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "\u2705Mary's best method! 2-10 ETH weekly!"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856253253865915,
+      "text": "@Subzero1188610 @boylikethat_sol Yes it does \ud83d\udcaa\ud83c\udffe\ud83d\udcaa\ud83c\udffe\ud83d\udcaa\ud83c\udffe",
+      "created_at": "2025-06-11 17:43:36+00:00",
+      "author_id": 1785375112058863616,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "bzero1188610 @boylikethat_sol Yes it does \ud83d\udcaa"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "188610 @boylikethat_sol Yes it does \ud83d\udcaa\ud83c\udffe\ud83d\udcaa\ud83c\udffe\ud83d\udcaa\ud83c\udffe"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856252037546197,
+      "text": "Watching staking rewards tick on-chain is different when it's all native to Bitcoin.",
+      "created_at": "2025-06-11 17:43:35+00:00",
+      "author_id": 1827006281464401921,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.6,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "it's all native to Bitcoin."
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856251433513078,
+      "text": "@tienho_nyx $LBTC isn\u2019t just staking, it\u2019s yield, rewards, and full DeFi access for your BTC",
+      "created_at": "2025-06-11 17:43:35+00:00",
+      "author_id": 1346870737320218624,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.35,
+        "subjectivity": 0.55,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "@tienho_nyx $LBTC isn\u2019t just staking,"
+        },
+        {
+          "keyword": "$LBTC",
+          "category": "potential_new",
+          "context": "@tienho_nyx $LBTC isn\u2019t just staking,"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856251400298988,
+      "text": "@YisusCryptos FrogeBNB\n\ud83c\udf81 20x Whitelist Giveaway is LIVE!\nGrab your spot \ud83d\udc47\nLet's JOIN for more info \nTele : @FrogeBNB\n\nStay weird. Stay froggy. Let\u2019s go parabolic \ud83d\udcc8\ud83d\udca5\n#FROGE #Memecoin #BNB #CryptoGiveaway\u00a0#Whitelist",
+      "created_at": "2025-06-11 17:43:35+00:00",
+      "author_id": 1823914524346552320,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0568181818181818,
+        "subjectivity": 0.6666666666666666,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "bnb",
+          "category": "major",
+          "context": "@YisusCryptos FrogeBNB\n\ud83c\udf81 20x Whitelist Giv"
+        },
+        {
+          "keyword": "meme",
+          "category": "meme",
+          "context": "arabolic \ud83d\udcc8\ud83d\udca5\n#FROGE #Memecoin #BNB #CryptoGiv"
+        },
+        {
+          "keyword": "memecoin",
+          "category": "meme",
+          "context": "arabolic \ud83d\udcc8\ud83d\udca5\n#FROGE #Memecoin #BNB #CryptoGiveawa"
+        },
+        {
+          "keyword": "\ud83d\udcc8",
+          "category": "profit_signals",
+          "context": "Let\u2019s go parabolic \ud83d\udcc8\ud83d\udca5\n#FROGE #Memecoin #"
+        },
+        {
+          "keyword": "parabolic",
+          "category": "profit_signals",
+          "context": "ay froggy. Let\u2019s go parabolic \ud83d\udcc8\ud83d\udca5\n#FROGE #Memecoin"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856251265720386,
+      "text": "@Emdee_15 @legen_eth @TheDadbodtoken DADBOD sounds like the type of investment that might just take me from ramen noodles to five-star dining\u2014if I keep my expectations nice and low, that is!",
+      "created_at": "2025-06-11 17:43:35+00:00",
+      "author_id": 1887063138690121731,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.3,
+        "subjectivity": 0.65,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@Emdee_15 @legen_eth @TheDadbodtoken DAD"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856250473312635,
+      "text": "@edward_farina probably will be  revealed when BTC dropping has no impact on the rest of the market. So long time from now. \nAnd probably people we already know.",
+      "created_at": "2025-06-11 17:43:35+00:00",
+      "author_id": 1847845524981874688,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": -0.05,
+        "subjectivity": 0.4,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "l be  revealed when BTC dropping has no imp"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856250217443412,
+      "text": "@Madissa_eth @OpenledgerFdn Well detailed \nThanks madissa",
+      "created_at": "2025-06-11 17:43:35+00:00",
+      "author_id": 1221557353587314688,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.30000000000000004,
+        "subjectivity": 0.475,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@Madissa_eth @OpenledgerFdn Well"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856249118539844,
+      "text": "if you're among the 2%,\n time to flip that 98%.\ntell those scammers you're done with their kol pump and dump casino bs and return to the genesis of all coins.\n\n$BTC if you can bring volume and plan on playing with blackrock and feds(spoiler alert they own almost 40%).\n\nPeople's https://t.co/szs2UME1iU https://t.co/8ZtRksqclI",
+      "created_at": "2025-06-11 17:43:35+00:00",
+      "author_id": 1423546908086177792,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.6,
+        "subjectivity": 1.0,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "sis of all coins.\n\n$BTC if you can bring vo"
+        },
+        {
+          "keyword": "pump",
+          "category": "profit_signals",
+          "context": "done with their kol pump and dump casino bs"
+        },
+        {
+          "keyword": "$BTC",
+          "category": "potential_new",
+          "context": "esis of all coins.\n\n$BTC if you can bring vo"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856248820773373,
+      "text": "@Connoreo_ @simulate_sol it has utility trust me vro \ud83d\ude4f",
+      "created_at": "2025-06-11 17:43:35+00:00",
+      "author_id": 1921096473049264128,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "Connoreo_ @simulate_sol it has utility trus"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856248518488279,
+      "text": "@legen_eth This guy is so accurate.\ud83c\udf38\ud83d\udcbc\n@Analyst_Fuller",
+      "created_at": "2025-06-11 17:43:35+00:00",
+      "author_id": 1910517799660797953,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "@legen_eth This guy is so accu"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856248128397730,
+      "text": "\u2705Mary's best method! 2-10 ETH weekly! You're just in time \n\n\ud83d\udd17: https://t.co/JS8qIM9G34 \n\n\ud83e\ude76Friends: \n\ntzGNqQjb @qzz_r14944 @Frenchiedad839 @Mar18cus @huige_666",
+      "created_at": "2025-06-11 17:43:34+00:00",
+      "author_id": 1927263770776109056,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 1.0,
+        "subjectivity": 0.3,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "\u2705Mary's best method! 2-10 ETH weekly!"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856247939719217,
+      "text": "Try swapping $MOTO on @motoswapBTC and realize Bitcoin\u2019s true potential.",
+      "created_at": "2025-06-11 17:43:34+00:00",
+      "author_id": 1179325935755157504,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.175,
+        "subjectivity": 0.825,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "bitcoin",
+          "category": "major",
+          "context": "swapBTC and realize Bitcoin\u2019s true potential."
+        },
+        {
+          "keyword": "btc",
+          "category": "major",
+          "context": "g $MOTO on @motoswapBTC and realize Bitcoin"
+        },
+        {
+          "keyword": "$MOTO",
+          "category": "potential_new",
+          "context": "Try swapping $MOTO on @motoswapBTC and"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856247805419882,
+      "text": "@Silva_Defi @vainxyz @JOKERS_ON_SOL Been waiting for something like this, finally a presale that brings actual utility to Solana. No fluff, no fake hype, just raw on-chain action. Loaded my 2.5 SOL. Let's see who survives. https://t.co/NqF7tgT0dy",
+      "created_at": "2025-06-11 17:43:34+00:00",
+      "author_id": 1893272405709115392,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.028205128205128202,
+        "subjectivity": 0.49358974358974367,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "Been waiting for something like this, final"
+        },
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "s actual utility to Solana. No fluff, no fake"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "@vainxyz @JOKERS_ON_SOL Been waiting for so"
+        },
+        {
+          "keyword": "presale",
+          "category": "new_coin_signals",
+          "context": "ike this, finally a presale that brings actual"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856245624488442,
+      "text": "$ETH bears will be in disbelief \ud83d\udc40 https://t.co/0suNRmKI6N",
+      "created_at": "2025-06-11 17:43:34+00:00",
+      "author_id": 1417594995503210499,
+      "retweet_count": 0,
+      "like_count": 1,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "$ETH bears will be in di"
+        },
+        {
+          "keyword": "$ETH",
+          "category": "potential_new",
+          "context": "$ETH bears will be in di"
+        }
+      ],
+      "engagement_score": 1
+    },
+    {
+      "id": 1932856245100167628,
+      "text": "\ud83d\ude80 Dive into the world of Nine Lives (9lives)! With an MCAP of **$5.6K**, it\u2019s gaining traction. \ud83e\udd1d **Insiders**: 9 | **KOLs**: 0 | **Snipers**: 3 \ud83e\uddb8\u200d\u2642\ufe0f. Stay ahead with the trends! Check the chart and buy here: GMGN - Chart &amp; BUY: https://t.co/oJt4p094tW #Crypto #Solana #9Lives #\u2026",
+      "created_at": "2025-06-11 17:43:34+00:00",
+      "author_id": 361624192,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.625,
+        "subjectivity": 1.0,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "solana",
+          "category": "major",
+          "context": "oJt4p094tW #Crypto #Solana #9Lives #\u2026"
+        },
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "oJt4p094tW #Crypto #Solana #9Lives #\u2026"
+        },
+        {
+          "keyword": "\ud83d\ude80",
+          "category": "profit_signals",
+          "context": "\ud83d\ude80 Dive into the world"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856245037510684,
+      "text": "\ud83d\udea8 Whale-&gt;Buy-&gt;55.75SOL \ud83d\udea8\n\n\ud83e\udea9 \u1d04\u1d00 : Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk\n\ud83d\udd30 \u1d1b\u1d0f\u1d0b\u1d07\u0274 : $USELESS\n\u2728 \u1d0d\u1d04 : 49M\n\ud83d\udcaf \u029c\u1d0f\u029f\u1d05\u1d07\u0280 : 10520\n\ud83d\udce3 Alert \ud83d\udc49 https://t.co/0zUdiFPQEw \n\ud83c\udf2a\ufe0f Quick buy \ud83d\udc49 https://t.co/XGBxtkMZix\ud83d\udc8e\nInstant Limit Sell: Lock profits on the spot https://t.co/cDH7sWB8Hd",
+      "created_at": "2025-06-11 17:43:34+00:00",
+      "author_id": 2901797780,
+      "retweet_count": 1,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": -0.05555555555555556,
+        "subjectivity": 0.45555555555555555,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "sol",
+          "category": "major",
+          "context": "le-&gt;Buy-&gt;55.75SOL \ud83d\udea8\n\n\ud83e\udea9 \u1d04\u1d00 : Dz9mQ9Nzk"
+        },
+        {
+          "keyword": "uni",
+          "category": "defi",
+          "context": "GPFJ3r1bS4wgqKMHBPiVuniW8Mbonk\n\ud83d\udd30 \u1d1b\u1d0f\u1d0b\u1d07\u0274 : $U"
+        },
+        {
+          "keyword": "bonk",
+          "category": "meme",
+          "context": "1bS4wgqKMHBPiVuniW8Mbonk\n\ud83d\udd30 \u1d1b\u1d0f\u1d0b\u1d07\u0274 : $USELESS"
+        },
+        {
+          "keyword": "$USELESS",
+          "category": "potential_new",
+          "context": "niW8Mbonk\n\ud83d\udd30 \u1d1b\u1d0f\u1d0b\u1d07\u0274 : $USELESS\n\u2728 \u1d0d\u1d04 : 49M\n\ud83d\udcaf \u029c\u1d0f\u029f\u1d05\u1d07\u0280"
+        }
+      ],
+      "engagement_score": 3
+    },
+    {
+      "id": 1932856244785631574,
+      "text": "@cz_binance Learn and build from anywhere in the world, distance is not a barrier with @_BabyBuilder $BBOB https://t.co/wwDWidsAjL",
+      "created_at": "2025-06-11 17:43:34+00:00",
+      "author_id": 1875939367879106560,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.0,
+        "subjectivity": 0.0,
+        "classification": "neutral"
+      },
+      "mentions": [
+        {
+          "keyword": "binance",
+          "category": "major",
+          "context": "@cz_binance Learn and build fro"
+        },
+        {
+          "keyword": "$BBOB",
+          "category": "potential_new",
+          "context": "with @_BabyBuilder $BBOB https://t.co/wwDWid"
+        }
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": 1932856243216941394,
+      "text": "Let me give you another example. #Ethereum, which has a much larger market cap than Kaspa, has made a move of over +100% since the March bottom.\nDo I think Ethereum is better than $KAS?\nOf course not \u2014 but as a trader, I\u2019m giving you an explanation.\n\nThe volume-to-market cap https://t.co/XVWPi6GOy6 https://t.co/HhTzc7Uxa1",
+      "created_at": "2025-06-11 17:43:33+00:00",
+      "author_id": 880907096,
+      "retweet_count": 0,
+      "like_count": 0,
+      "reply_count": 0,
+      "quote_count": 0,
+      "sentiment": {
+        "polarity": 0.25,
+        "subjectivity": 0.5,
+        "classification": "positive"
+      },
+      "mentions": [
+        {
+          "keyword": "ethereum",
+          "category": "major",
+          "context": "u another example. #Ethereum, which has a much l"
+        },
+        {
+          "keyword": "eth",
+          "category": "major",
+          "context": "u another example. #Ethereum, which has a m"
+        },
+        {
+          "keyword": "$KAS",
+          "category": "potential_new",
+          "context": "reum is better than $KAS?\nOf course not \u2014 bu"
+        }
+      ],
+      "engagement_score": 0
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "Test Summary": {
+    "Total Tests": 4,
+    "Tests Passed": 2,
+    "Tests Failed": 2,
+    "Success Rate": "50.0%",
+    "Duration": "3.38 seconds"
+  },
+  "Test Results": {
+    "Performance Optimization": "FAILED",
+    "New Features": "FAILED",
+    "Production Deployment": "PASSED",
+    "System Integration": "PASSED"
+  },
+  "Detailed Results": {
+    "start_time": "2025-06-22 08:32:22.932502",
+    "tests_passed": 2,
+    "tests_failed": 2,
+    "performance_metrics": {
+      "status": "FAILED",
+      "error": ""
+    },
+    "feature_tests": {
+      "status": "FAILED",
+      "error": "No module named 'core'"
+    },
+    "deployment_tests": {
+      "status": "PASSED"
+    },
+    "integration_tests": {
+      "status": "PASSED"
+    },
+    "end_time": "2025-06-22 08:32:26.310571",
+    "duration": 3.378069
+  }
+}

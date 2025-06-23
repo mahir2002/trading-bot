@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Trading Dashboard</title>
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #1a1a1a;
+            --bg-darker: #0d1117;
+            --text-light: #e6edf3;
+            --text-muted: #7d8590;
+            --border-color: #30363d;
+            --success-color: #238636;
+            --danger-color: #da3633;
+            --warning-color: #9e6a03;
+            --info-color: #0969da;
+        }
+        
+        body {
+            background-color: var(--bg-darker);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .dashboard-container {
+            padding: 20px;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: var(--bg-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .card-header {
+            background-color: var(--bg-darker);
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-light);
+            font-weight: 600;
+        }
+        
+        .metric-card {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .metric-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .positive { color: var(--success-color); }
+        .negative { color: var(--danger-color); }
+        .neutral { color: var(--text-muted); }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .status-running { background-color: var(--success-color); }
+        .status-stopped { background-color: var(--danger-color); }
+        .status-warning { background-color: var(--warning-color); }
+        
+        .table-dark {
+            --bs-table-bg: var(--bg-dark);
+            --bs-table-border-color: var(--border-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--info-color);
+            border-color: var(--info-color);
+        }
+        
+        .btn-success {
+            background-color: var(--success-color);
+            border-color: var(--success-color);
+        }
+        
+        .btn-danger {
+            background-color: var(--danger-color);
+            border-color: var(--danger-color);
+        }
+        
+        .alert-custom {
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin: 20px 0;
+        }
+        
+        .sidebar {
+            background-color: var(--bg-dark);
+            border-right: 1px solid var(--border-color);
+            height: 100vh;
+            position: fixed;
+            width: 250px;
+            z-index: 1000;
+        }
+        
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        
+        .nav-link {
+            color: var(--text-muted);
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: var(--text-light);
+            background-color: var(--bg-darker);
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .sidebar.show {
+                transform: translateX(0);
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="p-3">
+            <h4 class="text-center mb-4">
+                <i class="fas fa-chart-line"></i> Trading Platform
+            </h4>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" data-section="overview">
+                        <i class="fas fa-tachometer-alt"></i> Overview
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="portfolio">
+                        <i class="fas fa-wallet"></i> Portfolio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="positions">
+                        <i class="fas fa-coins"></i> Positions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="orders">
+                        <i class="fas fa-list-alt"></i> Orders
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="market">
+                        <i class="fas fa-chart-candlestick"></i> Market Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="ai">
+                        <i class="fas fa-brain"></i> AI Predictions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="risk">
+                        <i class="fas fa-shield-alt"></i> Risk Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="system">
+                        <i class="fas fa-server"></i> System Status
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Overview Section -->
+        <div id="overview-section" class="section">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2><i class="fas fa-tachometer-alt"></i> Trading Overview</h2>
+                </div>
+            </div>
+            
+            <!-- Key Metrics -->
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <div class="card metric-card">
+                        <div class="metric-value" id="total-value">$0</div>
+                        <div class="metric-label">Total Portfolio Value</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card metric-card">
+                        <div class="metric-value" id="total-pnl">$0</div>
+                        <div class="metric-label">Total P&L</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card metric-card">
+                        <div class="metric-value" id="daily-pnl">$0</div>
+                        <div class="metric-label">Daily P&L</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card metric-card">
+                        <div class="metric-value" id="positions-count">0</div>
+                        <div class="metric-label">Active Positions</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Charts Row -->
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-chart-line"></i> Portfolio Performance</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="portfolioChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-exclamation-triangle"></i> Recent Alerts</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="alerts-container" style="max-height: 300px; overflow-y: auto;">
+                                <!-- Alerts will be populated here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div id="portfolio-section" class="section" style="display: none;">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2><i class="fas fa-wallet"></i> Portfolio Management</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Portfolio Allocation</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="allocationChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Performance Metrics</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="performance-metrics">
+                                <!-- Performance metrics will be populated here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Positions Section -->
+        <div id="positions-section" class="section" style="display: none;">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2><i class="fas fa-coins"></i> Active Positions</h2>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Symbol</th>
+                                    <th>Quantity</th>
+                                    <th>Avg Price</th>
+                                    <th>Current Price</th>
+                                    <th>Market Value</th>
+                                    <th>Unrealized P&L</th>
+                                    <th>P&L %</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="positions-table">
+                                <!-- Positions will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Orders Section -->
+        <div id="orders-section" class="section" style="display: none;">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2><i class="fas fa-list-alt"></i> Order Management</h2>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Place New Order</h5>
+                        </div>
+                        <div class="card-body">
+                            <form id="order-form">
+                                <div class="mb-3">
+                                    <label class="form-label">Symbol</label>
+                                    <select class="form-select" id="order-symbol" required>
+                                        <option value="">Select Symbol</option>
+                                        <option value="BTCUSDT">BTC/USDT</option>
+                                        <option value="ETHUSDT">ETH/USDT</option>
+                                        <option value="ADAUSDT">ADA/USDT</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Side</label>
+                                    <select class="form-select" id="order-side" required>
+                                        <option value="BUY">Buy</option>
+                                        <option value="SELL">Sell</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Order Type</label>
+                                    <select class="form-select" id="order-type" required>
+                                        <option value="MARKET">Market</option>
+                                        <option value="LIMIT">Limit</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Quantity</label>
+                                    <input type="number" class="form-control" id="order-quantity" step="0.001" required>
+                                </div>
+                                <div class="mb-3" id="price-field" style="display: none;">
+                                    <label class="form-label">Price</label>
+                                    <input type="number" class="form-control" id="order-price" step="0.01">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Place Order</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Recent Orders</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-dark table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Symbol</th>
+                                            <th>Side</th>
+                                            <th>Type</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                            <th>Status</th>
+                                            <th>Time</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="orders-table">
+                                        <!-- Orders will be populated here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Market Data Section -->
+        <div id="market-section" class="section" style="display: none;">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2><i class="fas fa-chart-candlestick"></i> Market Data</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Live Market Prices</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-dark table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Symbol</th>
+                                            <th>Price</th>
+                                            <th>24h Change</th>
+                                            <th>24h Volume</th>
+                                            <th>Last Update</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="market-data-table">
+                                        <!-- Market data will be populated here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Predictions Section -->
+        <div id="ai-section" class="section" style="display: none;">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2><i class="fas fa-brain"></i> AI Predictions</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Model Performance</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="ai-performance">
+                                <!-- AI performance metrics -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Recent Predictions</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="ai-predictions">
+                                <!-- AI predictions -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Risk Management Section -->
+        <div id="risk-section" class="section" style="display: none;">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2><i class="fas fa-shield-alt"></i> Risk Management</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Risk Metrics</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="risk-metrics">
+                                <!-- Risk metrics -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Risk Alerts</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="risk-alerts">
+                                <!-- Risk alerts -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Status Section -->
+        <div id="system-section" class="section" style="display: none;">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2><i class="fas fa-server"></i> System Status</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Module Status</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="module-status">
+                                <!-- Module status -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>System Performance</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="system-performance">
+                                <!-- System performance -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+    
+    <script>
+        // Initialize Socket.IO connection
+        const socket = io();
+        
+        // Dashboard state
+        let dashboardData = {
+            portfolio: {},
+            positions: {},
+            orders: [],
+            marketData: {},
+            aiPredictions: {},
+            riskMetrics: {},
+            systemStatus: {}
+        };
+        
+        // Charts
+        let portfolioChart = null;
+        let allocationChart = null;
+        
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeNavigation();
+            initializeCharts();
+            initializeOrderForm();
+            
+            // Request initial data
+            socket.emit('request_data', {type: 'all'});
+        });
+        
+        // Navigation
+        function initializeNavigation() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Update active nav
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show corresponding section
+                    const sectionId = this.getAttribute('data-section') + '-section';
+                    sections.forEach(s => s.style.display = 'none');
+                    document.getElementById(sectionId).style.display = 'block';
+                });
+            });
+        }
+        
+        // Initialize charts
+        function initializeCharts() {
+            // Portfolio performance chart
+            const portfolioCtx = document.getElementById('portfolioChart').getContext('2d');
+            portfolioChart = new Chart(portfolioCtx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Portfolio Value',
+                        data: [],
+                        borderColor: '#0969da',
+                        backgroundColor: 'rgba(9, 105, 218, 0.1)',
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#e6edf3' }
+                        }
+                    },
+                    scales: {
+                        x: { 
+                            ticks: { color: '#7d8590' },
+                            grid: { color: '#30363d' }
+                        },
+                        y: { 
+                            ticks: { color: '#7d8590' },
+                            grid: { color: '#30363d' }
+                        }
+                    }
+                }
+            });
+            
+            // Portfolio allocation chart
+            const allocationCtx = document.getElementById('allocationChart').getContext('2d');
+            allocationChart = new Chart(allocationCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        data: [],
+                        backgroundColor: [
+                            '#238636', '#da3633', '#9e6a03', '#0969da', '#8b5cf6'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#e6edf3' }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Initialize order form
+        function initializeOrderForm() {
+            const orderForm = document.getElementById('order-form');
+            const orderType = document.getElementById('order-type');
+            const priceField = document.getElementById('price-field');
+            
+            orderType.addEventListener('change', function() {
+                if (this.value === 'LIMIT') {
+                    priceField.style.display = 'block';
+                    document.getElementById('order-price').required = true;
+                } else {
+                    priceField.style.display = 'none';
+                    document.getElementById('order-price').required = false;
+                }
+            });
+            
+            orderForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const orderData = {
+                    symbol: document.getElementById('order-symbol').value,
+                    side: document.getElementById('order-side').value,
+                    order_type: document.getElementById('order-type').value,
+                    quantity: parseFloat(document.getElementById('order-quantity').value),
+                    price: document.getElementById('order-price').value ? 
+                           parseFloat(document.getElementById('order-price').value) : null
+                };
+                
+                // Send order to backend
+                fetch('/api/place-order', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(orderData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Order placed successfully!');
+                        orderForm.reset();
+                    } else {
+                        alert('Error placing order: ' + data.error);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error placing order');
+                });
+            });
+        }
+        
+        // Socket event handlers
+        socket.on('connect', function() {
+            console.log('Connected to dashboard');
+        });
+        
+        socket.on('initial_data', function(data) {
+            console.log('Received initial data:', data);
+            dashboardData = data;
+            updateAllDisplays();
+        });
+        
+        socket.on('portfolio_update', function(data) {
+            dashboardData.portfolio = data;
+            updatePortfolioDisplay();
+        });
+        
+        socket.on('positions_update', function(data) {
+            dashboardData.positions = data;
+            updatePositionsDisplay();
+        });
+        
+        socket.on('order_update', function(data) {
+            dashboardData.orders.unshift(data);
+            if (dashboardData.orders.length > 100) {
+                dashboardData.orders = dashboardData.orders.slice(0, 100);
+            }
+            updateOrdersDisplay();
+        });
+        
+        socket.on('market_data_update', function(data) {
+            dashboardData.marketData[data.symbol] = data.data;
+            updateMarketDataDisplay();
+        });
+        
+        socket.on('system_status_update', function(data) {
+            dashboardData.systemStatus = data;
+            updateSystemStatusDisplay();
+        });
+        
+        // Update functions
+        function updateAllDisplays() {
+            updatePortfolioDisplay();
+            updatePositionsDisplay();
+            updateOrdersDisplay();
+            updateMarketDataDisplay();
+            updateSystemStatusDisplay();
+        }
+        
+        function updatePortfolioDisplay() {
+            const portfolio = dashboardData.portfolio;
+            
+            // Update overview metrics
+            document.getElementById('total-value').textContent = 
+                formatCurrency(portfolio.total_value || 0);
+            
+            const totalPnlElement = document.getElementById('total-pnl');
+            const totalPnl = portfolio.total_pnl || 0;
+            totalPnlElement.textContent = formatCurrency(totalPnl);
+            totalPnlElement.className = 'metric-value ' + (totalPnl >= 0 ? 'positive' : 'negative');
+            
+            const dailyPnlElement = document.getElementById('daily-pnl');
+            const dailyPnl = portfolio.daily_pnl || 0;
+            dailyPnlElement.textContent = formatCurrency(dailyPnl);
+            dailyPnlElement.className = 'metric-value ' + (dailyPnl >= 0 ? 'positive' : 'negative');
+            
+            document.getElementById('positions-count').textContent = 
+                portfolio.positions_count || 0;
+        }
+        
+        function updatePositionsDisplay() {
+            const positions = dashboardData.positions;
+            const tbody = document.getElementById('positions-table');
+            
+            tbody.innerHTML = '';
+            
+            Object.values(positions).forEach(position => {
+                const row = tbody.insertRow();
+                const pnlClass = position.unrealized_pnl >= 0 ? 'positive' : 'negative';
+                
+                row.innerHTML = `
+                    <td>${position.symbol}</td>
+                    <td>${position.quantity.toFixed(4)}</td>
+                    <td>${formatCurrency(position.average_price)}</td>
+                    <td>${formatCurrency(position.current_price)}</td>
+                    <td>${formatCurrency(position.market_value)}</td>
+                    <td class="${pnlClass}">${formatCurrency(position.unrealized_pnl)}</td>
+                    <td class="${pnlClass}">${position.pnl_percentage.toFixed(2)}%</td>
+                    <td>
+                        <button class="btn btn-sm btn-danger" onclick="closePosition('${position.symbol}')">
+                            Close
+                        </button>
+                    </td>
+                `;
+            });
+        }
+        
+        function updateOrdersDisplay() {
+            const orders = dashboardData.orders;
+            const tbody = document.getElementById('orders-table');
+            
+            tbody.innerHTML = '';
+            
+            orders.slice(0, 20).forEach(order => {
+                const row = tbody.insertRow();
+                const statusClass = getStatusClass(order.status);
+                
+                row.innerHTML = `
+                    <td>${order.order_id.substring(0, 8)}...</td>
+                    <td>${order.symbol}</td>
+                    <td>${order.side}</td>
+                    <td>${order.order_type}</td>
+                    <td>${order.quantity}</td>
+                    <td>${order.price ? formatCurrency(order.price) : 'Market'}</td>
+                    <td><span class="badge bg-${statusClass}">${order.status}</span></td>
+                    <td>${formatTime(order.timestamp)}</td>
+                    <td>
+                        ${order.status === 'PENDING' || order.status === 'SUBMITTED' ? 
+                          `<button class="btn btn-sm btn-warning" onclick="cancelOrder('${order.order_id}')">Cancel</button>` : 
+                          '-'}
+                    </td>
+                `;
+            });
+        }
+        
+        function updateMarketDataDisplay() {
+            const marketData = dashboardData.marketData;
+            const tbody = document.getElementById('market-data-table');
+            
+            tbody.innerHTML = '';
+            
+            Object.entries(marketData).forEach(([symbol, data]) => {
+                const row = tbody.insertRow();
+                const changeClass = data.change_24h >= 0 ? 'positive' : 'negative';
+                
+                row.innerHTML = `
+                    <td>${symbol}</td>
+                    <td>${formatCurrency(data.price)}</td>
+                    <td class="${changeClass}">${data.change_24h.toFixed(2)}%</td>
+                    <td>${formatVolume(data.volume_24h)}</td>
+                    <td>${formatTime(data.timestamp)}</td>
+                `;
+            });
+        }
+        
+        function updateSystemStatusDisplay() {
+            const systemStatus = dashboardData.systemStatus;
+            
+            // Update module status
+            const moduleStatusDiv = document.getElementById('module-status');
+            if (systemStatus.modules) {
+                let html = '';
+                Object.entries(systemStatus.modules).forEach(([module, info]) => {
+                    const statusClass = info.status === 'RUNNING' ? 'status-running' : 'status-stopped';
+                    html += `
+                        <div class="mb-2">
+                            <span class="status-indicator ${statusClass}"></span>
+                            <strong>${module.replace('_', ' ').toUpperCase()}</strong>
+                            <span class="text-muted ms-2">Uptime: ${info.uptime}</span>
+                        </div>
+                    `;
+                });
+                moduleStatusDiv.innerHTML = html;
+            }
+            
+            // Update system performance
+            const performanceDiv = document.getElementById('system-performance');
+            if (systemStatus.performance) {
+                const perf = systemStatus.performance;
+                performanceDiv.innerHTML = `
+                    <div class="mb-2">
+                        <strong>CPU Usage:</strong> 
+                        <span class="ms-2">${perf.cpu_usage.toFixed(1)}%</span>
+                    </div>
+                    <div class="mb-2">
+                        <strong>Memory Usage:</strong> 
+                        <span class="ms-2">${perf.memory_usage.toFixed(1)}%</span>
+                    </div>
+                    <div class="mb-2">
+                        <strong>Events/Second:</strong> 
+                        <span class="ms-2">${perf.events_per_second}</span>
+                    </div>
+                `;
+            }
+        }
+        
+        // Utility functions
+        function formatCurrency(value) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD'
+            }).format(value);
+        }
+        
+        function formatVolume(value) {
+            if (value >= 1e9) return (value / 1e9).toFixed(2) + 'B';
+            if (value >= 1e6) return (value / 1e6).toFixed(2) + 'M';
+            if (value >= 1e3) return (value / 1e3).toFixed(2) + 'K';
+            return value.toFixed(0);
+        }
+        
+        function formatTime(timestamp) {
+            return new Date(timestamp).toLocaleTimeString();
+        }
+        
+        function getStatusClass(status) {
+            switch (status) {
+                case 'FILLED': return 'success';
+                case 'CANCELLED': return 'secondary';
+                case 'REJECTED': return 'danger';
+                case 'PENDING': return 'warning';
+                case 'SUBMITTED': return 'info';
+                default: return 'secondary';
+            }
+        }
+        
+        function cancelOrder(orderId) {
+            if (confirm('Are you sure you want to cancel this order?')) {
+                fetch('/api/cancel-order', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({order_id: orderId})
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Order cancelled successfully!');
+                    } else {
+                        alert('Error cancelling order: ' + data.error);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error cancelling order');
+                });
+            }
+        }
+        
+        function closePosition(symbol) {
+            if (confirm(`Are you sure you want to close position in ${symbol}?`)) {
+                // Implementation would depend on your position closing logic
+                alert('Position close functionality would be implemented here');
+            }
+        }
+    </script>
+</body>
+</html> 

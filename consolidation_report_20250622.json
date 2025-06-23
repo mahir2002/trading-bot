@@ -1,0 +1,48 @@
+{
+  "consolidation_date": "20250622",
+  "core_systems_kept": {
+    "bots": {
+      "unified_master_trading_bot.py": "Main production system",
+      "live_optimized_bot.py": "Live trading focused",
+      "ai_trading_bot_simple.py": "Learning/testing",
+      "telegram_ai_trading_bot.py": "Mobile notifications",
+      "binance_testnet_client.py": "Safe testing environment"
+    },
+    "dashboards": {
+      "unified_trading_dashboard.py": "Main dashboard",
+      "crypto_dashboard_gui.py": "Desktop interface",
+      "dashboard_customization_system.py": "Customizable interface"
+    }
+  },
+  "archived_systems": {
+    "bots": [
+      "ai_trading_bot.py",
+      "ai_trading_bot_advanced.py",
+      "enhanced_ai_trading_bot.py",
+      "ai_trading_bot_dynamic.py",
+      "multi_exchange_universal_trading_bot.py",
+      "comprehensive_ai_crypto_trading_bot.py",
+      "integrated_twitter_trading_bot.py",
+      "ai_trading_bot_with_screener.py",
+      "enhanced_ai_crypto_bot.py"
+    ],
+    "dashboards": [
+      "dashboard.py",
+      "advanced_paper_trading_dashboard.py",
+      "crypto_screener_dashboard.py",
+      "chart_dashboard.py",
+      "enhanced_dashboard_with_alerts.py",
+      "integrated_customization_dashboard.py"
+    ]
+  },
+  "statistics": {
+    "total_bots_before": 14,
+    "total_bots_after": 5,
+    "total_dashboards_before": 9,
+    "total_dashboards_after": 3,
+    "reduction_percentage": {
+      "bots": 64.3,
+      "dashboards": 66.7
+    }
+  }
+}

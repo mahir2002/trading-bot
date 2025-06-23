@@ -1,0 +1,35 @@
+{
+  "export_timestamp": "2025-06-12T22:19:31.175469",
+  "summary": {
+    "uptime_hours": 0.0030763430555555554,
+    "system": {
+      "avg_cpu_percent": 9.65,
+      "max_cpu_percent": 12.0,
+      "avg_memory_percent": 75.45,
+      "max_memory_percent": 76.0,
+      "avg_api_calls_per_minute": 10.0,
+      "avg_cache_hit_rate": 40.0
+    },
+    "api": {
+      "total_calls": 10,
+      "avg_response_time_ms": 1017.7946041763446,
+      "successful_calls": 10,
+      "cache_hits": 4,
+      "success_rate": 100.0,
+      "cache_hit_rate": 40.0
+    },
+    "trading": {
+      "total_trades": 25,
+      "win_rate": 72.0,
+      "total_pnl": 1250.5,
+      "daily_pnl": 85.25,
+      "max_drawdown": 3.2,
+      "sharpe_ratio": 1.8,
+      "active_positions": 5,
+      "portfolio_value": 11250.5
+    }
+  },
+  "recommendations": [
+    "\ud83d\udce1 Low cache hit rate. Consider increasing cache duration or improving cache strategy."
+  ]
+}

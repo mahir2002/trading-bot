@@ -1,0 +1,41 @@
+{
+  "report_type": "non_root_security_implementation",
+  "generated_at": "2025-06-19T10:56:41.682530+00:00",
+  "system_configuration": {
+    "user": {
+      "username": "appuser",
+      "uid": 1001,
+      "gid": 1001
+    },
+    "security_level": "high",
+    "compliance_frameworks": [
+      "CIS Docker Benchmark",
+      "NIST 800-190",
+      "PCI DSS"
+    ]
+  },
+  "security_features": {
+    "non_root_execution": true,
+    "capability_dropping": true,
+    "read_only_filesystem": true,
+    "privilege_escalation_prevention": true,
+    "security_labels": true,
+    "health_checks": true,
+    "resource_isolation": true
+  },
+  "deployment_files": [
+    "Dockerfile.trading-bot.secure",
+    "Dockerfile.dashboard.secure",
+    "docker-compose.secure.yml",
+    "k8s-deployment-secure.yaml",
+    "security_monitor.py",
+    "non_root_config.yaml"
+  ],
+  "security_score": 95,
+  "recommendations": [
+    "Review generated Dockerfiles and configurations",
+    "Test deployment in development environment",
+    "Run security monitoring regularly",
+    "Keep security configurations up to date"
+  ]
+}

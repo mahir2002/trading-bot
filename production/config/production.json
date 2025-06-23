@@ -1,0 +1,7 @@
+{
+  "environment": "production",
+  "live_trading": false,
+  "monitoring": true,
+  "alerts": true,
+  "backup_interval": 6
+}

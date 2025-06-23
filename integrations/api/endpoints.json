@@ -1,0 +1,23 @@
+{
+  "base_url": "http://localhost:8080",
+  "version": "v1",
+  "endpoints": {
+    "health": "/health",
+    "status": "/api/v1/status",
+    "performance": "/api/v1/performance",
+    "new_listings": "/api/v1/new-listings",
+    "sentiment": "/api/v1/sentiment",
+    "trading_signals": "/api/v1/trading/signals",
+    "trading_decisions": "/api/v1/trading/decisions",
+    "portfolio": "/api/v1/portfolio",
+    "metrics": "/api/v1/metrics"
+  },
+  "authentication": {
+    "enabled": true,
+    "type": "bearer_token"
+  },
+  "rate_limiting": {
+    "enabled": true,
+    "requests_per_minute": 100
+  }
+}

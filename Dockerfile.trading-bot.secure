@@ -1,0 +1,71 @@
+# Non-root user setup for security
+# Base image: python:3.11-alpine
+FROM python:3.11-alpine
+
+# Security and compliance labels
+LABEL security.non_root="true"
+LABEL security.compliance="cis-docker-benchmark,nist-800-190"
+LABEL security.level="high"
+LABEL security.scan="enabled"
+LABEL maintainer="AI Trading Bot Security System"
+LABEL version="1.0"
+LABEL created="2025-06-19T10:56:41.678728+00:00"
+
+# Create non-root group and user
+RUN addgroup -g 1001 -S appgroup && \
+    adduser -u 1001 -S appuser -G appgroup
+
+# Create application directories with proper ownership
+RUN mkdir -p /app \
+    /app/logs \
+    /app/data \
+    /app/config && \
+    chown -R 1001:1001 /app && \
+    chmod -R 755 /app
+
+# Set specific directory permissions
+RUN chmod 755 /app/logs && \
+    chmod 644 /app/data && \
+    chmod 600 /app/config
+
+# Python application setup
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PYTHONPATH=/app
+
+# Install Python dependencies as non-root user
+COPY --chown=1001:1001 requirements.txt /tmp/
+RUN pip install --user --no-cache-dir -r /tmp/requirements.txt && \
+    rm /tmp/requirements.txt
+
+# Add user site-packages to PATH
+ENV PATH=/home/appuser/.local/bin:$PATH
+
+# Copy application files with proper ownership
+COPY --chown=1001:1001 . /app/
+
+# Set working directory
+WORKDIR /app
+
+# Additional security hardening
+RUN find /app -type f -name '*.py' -exec chmod 644 {} \; 2>/dev/null || true
+RUN find /app -type d -exec chmod 755 {} \; 2>/dev/null || true
+
+# Health check for container monitoring
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD python -c "import requests; requests.get('http://localhost:5001/health', timeout=5)" || exit 1
+
+# Switch to non-root user for security
+USER 1001:1001
+
+# Security labels
+LABEL security.non_root="true"
+LABEL security.user="appuser"
+LABEL security.uid="1001"
+LABEL security.gid="1001"
+LABEL security.compliance="cis-docker-benchmark"
+
+# Default command
+CMD ["python", "main.py"]
