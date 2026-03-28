@@ -527,7 +527,8 @@ class AITradingEngine:
                         if signal and signal.action != "HOLD":
                             signals.append(signal)
                             self.logger.info(
-                                f"📊 {strategy_name} signal: {signal.action} {symbol} (confidence: {signal.confidence:.2f})"
+                                f"📊 {strategy_name} signal: {signal.action} {symbol} "
+                                f"(confidence: {signal.confidence:.2f})"
                             )
                     except Exception as e:
                         self.logger.error(
@@ -680,7 +681,8 @@ async def main():
             result = await engine.run_trading_cycle(symbols)
             if result:
                 print(
-                    f"🔄 Trading cycle {cycle_count + 1}: {result['executed_signals']} signals executed"
+                    f"🔄 Trading cycle {cycle_count + 1}: "
+                    f"{result['executed_signals']} signals executed"
                 )
 
             cycle_count += 1

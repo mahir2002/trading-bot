@@ -195,10 +195,16 @@ class RiskManager:
             alerts.append(
                 RiskAlert(
                     level=RiskLevel.HIGH,
-                    message=f"Position size {position_pct:.2%} exceeds limit {self.limits.max_position_size:.2%}",
+                    message=(
+                        f"Position size {position_pct:.2%} exceeds limit "
+                        f"{self.limits.max_position_size:.2%}"
+                    ),
                     symbol=symbol,
                     action_required=True,
-                    suggested_action=f"Reduce size to {self.limits.max_position_size * portfolio_value / price:.4f} units",
+                    suggested_action=(
+                        f"Reduce size to "
+                        f"{self.limits.max_position_size * portfolio_value / price:.4f} units"
+                    ),
                 )
             )
             return False, alerts
@@ -221,7 +227,10 @@ class RiskManager:
             alerts.append(
                 RiskAlert(
                     level=RiskLevel.CRITICAL,
-                    message=f"Drawdown {self.current_drawdown:.2%} exceeds limit {self.limits.max_drawdown:.2%}",
+                    message=(
+                        f"Drawdown {self.current_drawdown:.2%} exceeds limit "
+                        f"{self.limits.max_drawdown:.2%}"
+                    ),
                     action_required=True,
                     suggested_action="Close positions and pause trading",
                 )
