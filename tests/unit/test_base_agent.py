@@ -1,7 +1,5 @@
 """Tests for base agent."""
 
-import pytest
-
 
 def test_base_agent_exists():
     """Test that base agent module exists."""

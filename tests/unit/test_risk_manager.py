@@ -1,7 +1,5 @@
 """Tests for risk manager."""
 
-import pytest
-
 
 def test_risk_manager_exists():
     """Test that risk manager module exists."""

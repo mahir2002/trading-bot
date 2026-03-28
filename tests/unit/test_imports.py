@@ -1,7 +1,5 @@
 """Test that core modules can be imported."""
 
-import pytest
-
 
 def test_import_src_package():
     """Test that src package can be imported."""
