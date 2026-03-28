@@ -1,52 +1,12 @@
 #!/usr/bin/env python3
 """
-AI Trading Bot Setup Script
-Helps users install dependencies and configure the bot
+Minimal setup.py for compatibility.
+Package is configured in pyproject.toml.
 """
 
-import os
-import sys
-import subprocess
-import shutil
-from pathlib import Path
+from setuptools import setup
 
-def print_header():
-    """Print setup header"""
-    print("🤖 AI Crypto Trading Bot Setup")
-    print("=" * 50)
-    print("This script will help you set up the trading bot.\n")
-
-def check_python_version():
-    """Check if Python version is compatible"""
-    print("🐍 Checking Python version...")
-    
-    if sys.version_info < (3, 8):
-        print("❌ Python 3.8 or higher is required")
-        print(f"   Current version: {sys.version}")
-        return False
-    
-    print(f"✅ Python {sys.version.split()[0]} is compatible")
-    return True
-
-def install_dependencies():
-    """Install required dependencies"""
-    print("\n📦 Installing dependencies...")
-    
-    try:
-        # Upgrade pip first
-        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--upgrade', 'pip'])
-        
-        # Install requirements
-        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'])
-        
-        print("✅ Dependencies installed successfully")
-        return True
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Failed to install dependencies: {e}")
-        return False
-    except FileNotFoundError:
-        print("❌ requirements.txt not found")
-        return False
+setup()
 
 def create_config_file():
     """Create configuration file from template"""
