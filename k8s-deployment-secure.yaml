@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: trading-bot
+    security: non-root
+  name: trading-bot-secure
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trading-bot
+  template:
+    metadata:
+      labels:
+        app: trading-bot
+        security: non-root
+    spec:
+      containers:
+      - env:
+        - name: TZ
+          value: UTC
+        - name: SECURITY_LEVEL
+          value: high
+        image: trading-bot:secure
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 5001
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        name: trading-bot
+        ports:
+        - containerPort: 5001
+        securityContext:
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+            - ALL
+          readOnlyRootFilesystem: true
+          runAsNonRoot: true
+          runAsUser: 1001
+        volumeMounts:
+        - mountPath: /app/logs
+          name: logs
+        - mountPath: /tmp
+          name: tmp
+      securityContext:
+        fsGroup: 1001
+        runAsGroup: 1001
+        runAsNonRoot: true
+        runAsUser: 1001
+      volumes:
+      - emptyDir: {}
+        name: logs
+      - emptyDir: {}
+        name: tmp

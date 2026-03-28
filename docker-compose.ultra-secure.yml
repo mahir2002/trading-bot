@@ -1,0 +1,282 @@
+version: '3.8'
+services:
+  trading-bot:
+    image: trading-bot:ultra-secure
+    container_name: trading-bot-ultra-secure
+    ports:
+    - 5001:5001
+    environment:
+    - TZ=UTC
+    - TRADING_MODE=paper
+    - SECURITY_LEVEL=maximum
+    - PRIVILEGE_LEVEL=zero
+    volumes:
+    - secure_logs:/app/logs
+    - secure_data:/app/data:ro
+    healthcheck:
+      test:
+      - CMD
+      - python
+      - -c
+      - import requests; requests.get('http://localhost:5001/health', timeout=5)
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    restart: unless-stopped
+    networks:
+    - secure-trading-network
+    privileged: false
+    user: 1001:1001
+    cap_drop:
+    - ALL
+    cap_add: []
+    read_only: true
+    security_opt:
+    - no-new-privileges:true
+    - apparmor:docker-trading_bot-maximum
+    - seccomp:/etc/docker/seccomp-trading_bot.json
+    mem_limit: 512m
+    mem_reservation: 128m
+    cpus: '1.0'
+    cpu_shares: 512
+    pids_limit: 50
+    tmpfs:
+    - /tmp:rw,noexec,nosuid,nodev,size=100m
+    - /var/run:rw,noexec,nosuid,nodev,size=50m
+    dns: &id001
+    - 1.1.1.1
+    - 1.0.0.1
+    - 8.8.8.8
+    - 8.8.4.4
+    dns_opt:
+    - ndots:1
+    - timeout:5
+    - attempts:2
+    ulimits:
+      nofile:
+        soft: 1024
+        hard: 2048
+      nproc:
+        soft: 50
+        hard: 60
+      memlock:
+        soft: 67108864
+        hard: 67108864
+      stack:
+        soft: 8388608
+        hard: 8388608
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+        labels: security.level,security.profile
+    labels:
+      security.monitoring: enabled
+      security.profile: trading_bot
+      security.level: maximum
+  dashboard:
+    image: dashboard:ultra-secure
+    container_name: dashboard-ultra-secure
+    ports:
+    - 8050:8050
+    environment:
+    - TZ=UTC
+    - SECURITY_LEVEL=maximum
+    volumes:
+    - secure_logs:/app/logs:ro
+    - secure_data:/app/data:ro
+    restart: unless-stopped
+    networks:
+    - secure-trading-network
+    privileged: false
+    user: 1001:1001
+    cap_drop:
+    - ALL
+    cap_add: []
+    read_only: true
+    security_opt:
+    - no-new-privileges:true
+    - apparmor:docker-trading_bot-maximum
+    - seccomp:/etc/docker/seccomp-trading_bot.json
+    mem_limit: 256m
+    mem_reservation: 64m
+    cpus: '0.5'
+    cpu_shares: 256
+    pids_limit: 30
+    tmpfs:
+    - /tmp:rw,noexec,nosuid,nodev,size=50m
+    dns: *id001
+    dns_opt:
+    - ndots:1
+    - timeout:5
+    - attempts:2
+    ulimits:
+      nofile:
+        soft: 1024
+        hard: 2048
+      nproc:
+        soft: 30
+        hard: 40
+      memlock:
+        soft: 67108864
+        hard: 67108864
+      stack:
+        soft: 8388608
+        hard: 8388608
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+        labels: security.level,security.profile
+    labels:
+      security.monitoring: enabled
+      security.profile: web_dashboard
+      security.level: maximum
+  api:
+    image: api:ultra-secure
+    container_name: api-ultra-secure
+    ports:
+    - 5000:5000
+    environment:
+    - API_HOST=0.0.0.0
+    - API_PORT=5000
+    - SECURITY_LEVEL=maximum
+    volumes:
+    - secure_logs:/app/logs
+    - secure_data:/app/data:ro
+    restart: unless-stopped
+    networks:
+    - secure-trading-network
+    privileged: false
+    user: 1001:1001
+    cap_drop:
+    - ALL
+    cap_add: []
+    read_only: true
+    security_opt:
+    - no-new-privileges:true
+    - apparmor:docker-trading_bot-maximum
+    - seccomp:/etc/docker/seccomp-trading_bot.json
+    mem_limit: 384m
+    mem_reservation: 96m
+    cpus: '0.8'
+    cpu_shares: 409
+    pids_limit: 40
+    tmpfs:
+    - /tmp:rw,noexec,nosuid,nodev,size=75m
+    dns: *id001
+    dns_opt:
+    - ndots:1
+    - timeout:5
+    - attempts:2
+    ulimits:
+      nofile:
+        soft: 1024
+        hard: 2048
+      nproc:
+        soft: 40
+        hard: 50
+      memlock:
+        soft: 67108864
+        hard: 67108864
+      stack:
+        soft: 8388608
+        hard: 8388608
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+        labels: security.level,security.profile
+    labels:
+      security.monitoring: enabled
+      security.profile: api_service
+      security.level: maximum
+  redis:
+    image: redis:7-alpine
+    container_name: redis-ultra-secure
+    ports:
+    - 6379:6379
+    volumes:
+    - redis_data:/data
+    command:
+    - redis-server
+    - --appendonly
+    - 'yes'
+    - --maxmemory
+    - 256mb
+    - --maxmemory-policy
+    - allkeys-lru
+    - --protected-mode
+    - 'yes'
+    - --bind
+    - 0.0.0.0
+    restart: unless-stopped
+    networks:
+    - secure-trading-network
+    privileged: false
+    user: 999:999
+    cap_drop:
+    - ALL
+    cap_add: []
+    read_only: true
+    security_opt:
+    - no-new-privileges:true
+    - apparmor:docker-trading_bot-maximum
+    - seccomp:/etc/docker/seccomp-trading_bot.json
+    mem_limit: 1g
+    mem_reservation: 256m
+    cpus: '1.5'
+    cpu_shares: 768
+    pids_limit: 100
+    tmpfs:
+    - /tmp:rw,noexec,nosuid,nodev,size=200m
+    - /var/run:rw,noexec,nosuid,nodev,size=100m
+    dns: *id001
+    dns_opt:
+    - ndots:1
+    - timeout:5
+    - attempts:2
+    ulimits:
+      nofile:
+        soft: 1024
+        hard: 2048
+      nproc:
+        soft: 100
+        hard: 110
+      memlock:
+        soft: 67108864
+        hard: 67108864
+      stack:
+        soft: 8388608
+        hard: 8388608
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+        labels: security.level,security.profile
+    labels:
+      security.monitoring: enabled
+      security.profile: database
+      security.level: maximum
+networks:
+  secure-trading-network:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.name: secure-trading-br
+      com.docker.network.bridge.enable_icc: 'false'
+      com.docker.network.bridge.enable_ip_masquerade: 'true'
+    ipam:
+      config:
+      - subnet: 172.30.0.0/24
+volumes:
+  secure_logs:
+    driver: local
+  secure_data:
+    driver: local
+  redis_data:
+    driver: local

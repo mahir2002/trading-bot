@@ -1,0 +1,149 @@
+# 🔐 SECURITY - Never commit these files!
+# API Keys and Secrets
+*.env
+*.env.*
+config.env*
+api_keys.json
+secrets.json
+.secrets/
+keys/
+
+# Trading Data and Logs
+logs/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+trading_data/
+backups/
+data/
+cache/
+temp/
+
+# Model Files (too large for git)
+models/
+trained_models/
+*.joblib
+*.pkl
+*.h5
+*.model
+enhanced_sklearn_models/
+enhanced_deep_models/
+enhanced_deep_models_v4/
+ultimate_models/
+ultimate_trained_models/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Certificates and Keys
+*.pem
+*.key
+*.crt
+*.cert
+
+# Docker
+.dockerignore
+
+# Reports and Charts
+reports/
+charts/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+backtest_results/
+vulnerability_reports/
+security_logs/
+backup_logs/
+
+# Archived Files
+archived_*
+*_backup_*
+*_archive_*
+
+# Volume Security
+volume_security/
+demo_volumes/
+
+# Integration Reports
+integration_reports/
+
+# NTP and Exchange Sync
+ntp_monitoring/
+exchange_time_sync/
+
+# Production Files
+production/backups/
+production/logs/
+production/models/
+
+# Specific Trading Bot Files
+*.info
+paper_trading.json
+trading_history.db
+analytics.db
+alerts.db
+api_users.db
+audit_logs/
+security/
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup

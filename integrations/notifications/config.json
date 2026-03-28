@@ -1,0 +1,25 @@
+{
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "bot_token": "your_telegram_bot_token",
+      "chat_id": "your_chat_id"
+    },
+    "email": {
+      "enabled": true,
+      "smtp_server": "smtp.gmail.com",
+      "smtp_port": 587
+    },
+    "discord": {
+      "enabled": false,
+      "webhook_url": "your_discord_webhook"
+    }
+  },
+  "alert_types": {
+    "new_listing": true,
+    "price_alert": true,
+    "sentiment_change": true,
+    "trade_execution": true,
+    "system_error": true
+  }
+}

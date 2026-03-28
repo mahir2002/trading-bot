@@ -1,0 +1,17 @@
+# Development environment requirements
+# Generated for dependency pinning demo
+
+django>=4.2.0,<5.0.0
+requests>=2.31.0,<3.0.0
+cryptography>=41.0.0,<42.0.0
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0,<3.0.0
+sqlalchemy>=2.0.0,<3.0.0
+celery>=5.3.0,<6.0.0
+redis>=5.0.0,<6.0.0
+psycopg2-binary>=2.9.0,<3.0.0
+gunicorn>=21.0.0,<22.0.0
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0

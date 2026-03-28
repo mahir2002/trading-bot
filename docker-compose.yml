@@ -1,0 +1,267 @@
+version: '3.8'
+
+services:
+  # Redis Cache Service (Secured)
+  redis:
+    image: redis:alpine
+    container_name: redis-cache
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - trading-network
+    # Non-root security configuration
+    user: "999:999"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add: []
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=100m
+
+  # Main Trading Bot Service (Secured)
+  trading-bot:
+    build: .
+    container_name: trading-bot
+    restart: always
+    ports:
+      - "5001:5001"
+    environment:
+      - TZ=UTC
+      - TRADING_MODE=paper
+      - SECURITY_LEVEL=high
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./google-credentials.json:/app/google-credentials.json:ro
+      - ./.env:/app/.env:ro
+    depends_on:
+      - redis
+    command: ["python", "main.py", "--mode", "bot"]
+    networks:
+      - trading-network
+    # Non-root security configuration
+    user: "1001:1001"
+    security_opt:
+      - no-new-privileges:true
+      - apparmor:unconfined
+    cap_drop:
+      - ALL
+    cap_add: []
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=100m
+      - /var/run:rw,noexec,nosuid,size=100m
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:5001/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Alternative: Trading Bot Only (Secured)
+  ai-trading-bot:
+    build: .
+    container_name: ai-trading-bot
+    restart: unless-stopped
+    environment:
+      - TRADING_MODE=paper
+      - SECURITY_LEVEL=high
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./.env:/app/.env:ro
+    command: ["python", "ai_trading_bot_simple.py"]
+    networks:
+      - trading-network
+    profiles:
+      - alternative
+    # Non-root security configuration
+    user: "1001:1001"
+    security_opt:
+      - no-new-privileges:true
+      - apparmor:unconfined
+    cap_drop:
+      - ALL
+    cap_add: []
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=100m
+      - /var/run:rw,noexec,nosuid,size=100m
+
+  # Dashboard Service (Secured)
+  dashboard:
+    build: .
+    container_name: ai-trading-dashboard
+    restart: unless-stopped
+    ports:
+      - "8050:8050"
+    environment:
+      - TRADING_MODE=paper
+      - TZ=UTC
+      - SECURITY_LEVEL=high
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs:ro
+      - ./data:/app/data:ro
+      - ./.env:/app/.env:ro
+    command: ["python", "dashboard.py"]
+    depends_on:
+      - redis
+    networks:
+      - trading-network
+    # Non-root security configuration
+    user: "1001:1001"
+    security_opt:
+      - no-new-privileges:true
+      - apparmor:unconfined
+    cap_drop:
+      - ALL
+    cap_add: []
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=100m
+      - /var/run:rw,noexec,nosuid,size=100m
+
+  # API Service (Secured)
+  api:
+    build: .
+    container_name: ai-trading-api
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=5000
+      - API_DEBUG=False
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - TZ=UTC
+      - SECURITY_LEVEL=high
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./api_users.db:/app/api_users.db
+      - ./.env:/app/.env:ro
+    command: ["python", "start_api.py"]
+    depends_on:
+      - redis
+    networks:
+      - trading-network
+    # Non-root security configuration
+    user: "1001:1001"
+    security_opt:
+      - no-new-privileges:true
+      - apparmor:unconfined
+    cap_drop:
+      - ALL
+    cap_add: []
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=100m
+      - /var/run:rw,noexec,nosuid,size=100m
+
+  # Combined Service (Bot + Dashboard) (Secured)
+  trading-suite:
+    build: .
+    container_name: ai-trading-suite
+    restart: unless-stopped
+    ports:
+      - "8050:8050"
+      - "5001:5001"
+    environment:
+      - TRADING_MODE=paper
+      - TZ=UTC
+      - SECURITY_LEVEL=high
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./google-credentials.json:/app/google-credentials.json:ro
+      - ./.env:/app/.env:ro
+    command: ["python", "main.py", "--mode", "both"]
+    depends_on:
+      - redis
+    networks:
+      - trading-network
+    profiles:
+      - suite
+    # Non-root security configuration
+    user: "1001:1001"
+    security_opt:
+      - no-new-privileges:true
+      - apparmor:unconfined
+    cap_drop:
+      - ALL
+    cap_add: []
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=100m
+      - /var/run:rw,noexec,nosuid,size=100m
+
+  # Full Suite (Bot + Dashboard + API) (Secured)
+  full-suite:
+    build: .
+    container_name: ai-trading-full-suite
+    restart: unless-stopped
+    ports:
+      - "8050:8050"
+      - "5000:5000"
+      - "5001:5001"
+    environment:
+      - TRADING_MODE=paper
+      - API_HOST=0.0.0.0
+      - API_PORT=5000
+      - TZ=UTC
+      - SECURITY_LEVEL=high
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./api_users.db:/app/api_users.db
+      - ./google-credentials.json:/app/google-credentials.json:ro
+      - ./.env:/app/.env:ro
+    command: ["python", "main.py", "--mode", "full"]
+    depends_on:
+      - redis
+    networks:
+      - trading-network
+    profiles:
+      - full
+    # Non-root security configuration
+    user: "1001:1001"
+    security_opt:
+      - no-new-privileges:true
+      - apparmor:unconfined
+    cap_drop:
+      - ALL
+    cap_add: []
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=100m
+      - /var/run:rw,noexec,nosuid,size=100m
+
+networks:
+  trading-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  logs:
+  data:
+  redis_data:

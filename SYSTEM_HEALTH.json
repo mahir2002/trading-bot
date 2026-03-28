@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-06-23T08:05:51.681466",
+  "overall_health": "EXCELLENT",
+  "health_percentage": 100.0,
+  "active_components": 8,
+  "total_components": 8,
+  "component_status": {
+    "performance_monitoring": true,
+    "cache_system": true,
+    "new_listing_detection": true,
+    "historical_data_fetching": true,
+    "social_sentiment_analysis": true,
+    "trading_integration": true,
+    "api_gateway": true,
+    "notification_system": true
+  },
+  "system_resources": {
+    "cpu_percent": 39.3,
+    "memory_percent": 84.9,
+    "disk_percent": 14.8
+  }
+}

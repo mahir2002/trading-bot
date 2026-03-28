@@ -1,0 +1,31 @@
+permissions:
+  app_directory: /app
+  app_permissions: '755'
+  config_directory: /app/config
+  config_permissions: '600'
+  data_directory: /app/data
+  data_permissions: '644'
+  log_directory: /app/logs
+  log_permissions: '755'
+  temp_directory: /tmp
+security_policy:
+  add_capabilities: []
+  allow_privilege_escalation: false
+  drop_capabilities:
+  - ALL
+  fs_group: null
+  no_new_privileges: true
+  read_only_root_fs: true
+  run_as_non_root: true
+  supplemental_groups: []
+user:
+  additional_groups: []
+  create_home: true
+  gid: 1001
+  group_name: appgroup
+  home_directory: /home/appuser
+  shell: /bin/sh
+  sudo_access: false
+  system_user: true
+  uid: 1001
+  username: appuser

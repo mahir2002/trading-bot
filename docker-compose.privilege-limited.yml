@@ -1,0 +1,244 @@
+version: '3.8'
+
+services:
+  # Trading Bot Service - Privilege Limited
+  trading-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile.trading-bot.secure
+    container_name: trading-bot-secure
+    restart: unless-stopped
+    ports:
+      - "5001:5001"
+    environment:
+      - TZ=UTC
+      - TRADING_MODE=paper
+      - SECURITY_LEVEL=high
+      - PRIVILEGE_LEVEL=minimal
+    volumes:
+      - secure_logs:/app/logs
+      - secure_data:/app/data:ro
+    networks:
+      - secure-network
+    depends_on:
+      - redis
+    # PRIVILEGE LIMITATIONS - MAXIMUM SECURITY
+    privileged: false                    # NEVER use privileged mode
+    user: "1001:1001"                   # Non-root user execution
+    cap_drop:                           # Drop ALL Linux capabilities
+      - ALL
+    cap_add: []                         # Add NO additional capabilities
+    security_opt:                       # Security options
+      - no-new-privileges:true
+      - apparmor:unconfined
+    read_only: true                     # Read-only root filesystem
+    tmpfs:                              # Secure temporary filesystems
+      - /tmp:rw,noexec,nosuid,nodev,size=100m
+      - /var/run:rw,noexec,nosuid,nodev,size=50m
+    # RESOURCE LIMITATIONS
+    mem_limit: 512m                     # Memory limit
+    mem_reservation: 128m               # Memory reservation
+    cpus: "1.0"                        # CPU limit
+    cpu_shares: 512                     # CPU priority
+    pids_limit: 100                     # Process limit
+    ulimits:                            # User limits
+      nofile:
+        soft: 1024
+        hard: 2048
+      nproc:
+        soft: 50
+        hard: 100
+    # NETWORK SECURITY
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    # HEALTH CHECK
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:5001/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  # Dashboard Service - Privilege Limited
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard.secure
+    container_name: dashboard-secure
+    restart: unless-stopped
+    ports:
+      - "8050:8050"
+    environment:
+      - TZ=UTC
+      - TRADING_MODE=paper
+      - SECURITY_LEVEL=high
+      - PRIVILEGE_LEVEL=minimal
+    volumes:
+      - secure_logs:/app/logs:ro
+      - secure_data:/app/data:ro
+    networks:
+      - secure-network
+    depends_on:
+      - redis
+    # PRIVILEGE LIMITATIONS - MAXIMUM SECURITY
+    privileged: false                    # NEVER use privileged mode
+    user: "1001:1001"                   # Non-root user execution
+    cap_drop:                           # Drop ALL Linux capabilities
+      - ALL
+    cap_add: []                         # Add NO additional capabilities
+    security_opt:                       # Security options
+      - no-new-privileges:true
+      - apparmor:unconfined
+    read_only: true                     # Read-only root filesystem
+    tmpfs:                              # Secure temporary filesystems
+      - /tmp:rw,noexec,nosuid,nodev,size=100m
+      - /var/run:rw,noexec,nosuid,nodev,size=50m
+    # RESOURCE LIMITATIONS
+    mem_limit: 512m                     # Memory limit
+    mem_reservation: 128m               # Memory reservation
+    cpus: "1.0"                        # CPU limit
+    cpu_shares: 512                     # CPU priority
+    pids_limit: 100                     # Process limit
+    ulimits:                            # User limits
+      nofile:
+        soft: 1024
+        hard: 2048
+      nproc:
+        soft: 50
+        hard: 100
+    # NETWORK SECURITY
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+
+  # API Service - Privilege Limited
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api.secure
+    container_name: api-secure
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=5000
+      - TZ=UTC
+      - SECURITY_LEVEL=high
+      - PRIVILEGE_LEVEL=minimal
+    volumes:
+      - secure_logs:/app/logs
+      - secure_data:/app/data:ro
+      - api_data:/app/api_data
+    networks:
+      - secure-network
+    depends_on:
+      - redis
+    # PRIVILEGE LIMITATIONS - MAXIMUM SECURITY
+    privileged: false                    # NEVER use privileged mode
+    user: "1001:1001"                   # Non-root user execution
+    cap_drop:                           # Drop ALL Linux capabilities
+      - ALL
+    cap_add: []                         # Add NO additional capabilities
+    security_opt:                       # Security options
+      - no-new-privileges:true
+      - apparmor:unconfined
+    read_only: true                     # Read-only root filesystem
+    tmpfs:                              # Secure temporary filesystems
+      - /tmp:rw,noexec,nosuid,nodev,size=100m
+      - /var/run:rw,noexec,nosuid,nodev,size=50m
+    # RESOURCE LIMITATIONS
+    mem_limit: 512m                     # Memory limit
+    mem_reservation: 128m               # Memory reservation
+    cpus: "1.0"                        # CPU limit
+    cpu_shares: 512                     # CPU priority
+    pids_limit: 100                     # Process limit
+    ulimits:                            # User limits
+      nofile:
+        soft: 1024
+        hard: 2048
+      nproc:
+        soft: 50
+        hard: 100
+    # NETWORK SECURITY
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+
+  # Redis Service - Privilege Limited
+  redis:
+    image: redis:7-alpine
+    container_name: redis-secure
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - secure-network
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory", "256mb", "--maxmemory-policy", "allkeys-lru"]
+    # PRIVILEGE LIMITATIONS - MAXIMUM SECURITY
+    privileged: false                    # NEVER use privileged mode
+    user: "999:999"                     # Redis non-root user
+    cap_drop:                           # Drop ALL Linux capabilities
+      - ALL
+    cap_add: []                         # Add NO additional capabilities
+    security_opt:                       # Security options
+      - no-new-privileges:true
+    read_only: true                     # Read-only root filesystem
+    tmpfs:                              # Secure temporary filesystems
+      - /tmp:rw,noexec,nosuid,nodev,size=50m
+    # RESOURCE LIMITATIONS
+    mem_limit: 256m                     # Memory limit
+    mem_reservation: 64m                # Memory reservation
+    cpus: "0.5"                        # CPU limit
+    cpu_shares: 256                     # CPU priority
+    pids_limit: 50                      # Process limit
+    ulimits:                            # User limits
+      nofile:
+        soft: 512
+        hard: 1024
+      nproc:
+        soft: 25
+        hard: 50
+    # NETWORK SECURITY
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+
+# SECURE NETWORK CONFIGURATION
+networks:
+  secure-network:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.enable_icc: "false"        # Disable inter-container communication
+      com.docker.network.bridge.enable_ip_masquerade: "true"
+      com.docker.network.driver.mtu: "1500"
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16
+          gateway: 172.30.0.1
+
+# SECURE VOLUME CONFIGURATION
+volumes:
+  secure_logs:
+    driver: local
+    driver_opts:
+      type: tmpfs
+      device: tmpfs
+      o: "size=200m,uid=1001,gid=1001,mode=0755"
+  secure_data:
+    driver: local
+  api_data:
+    driver: local
+    driver_opts:
+      type: tmpfs
+      device: tmpfs
+      o: "size=100m,uid=1001,gid=1001,mode=0755"
+  redis_data:
+    driver: local
+    driver_opts:
+      type: tmpfs
+      device: tmpfs
+      o: "size=256m,uid=999,gid=999,mode=0755" 

@@ -1,0 +1,148 @@
+{
+  "exchanges_connected": 2,
+  "trading_pairs_available": 14,
+  "arbitrage_opportunities": [
+    {
+      "symbol": "BTC/USDT",
+      "buy_exchange": "binance",
+      "sell_exchange": "bybit",
+      "buy_price": 103445.67,
+      "sell_price": 103450.12,
+      "profit_percentage": 0.043,
+      "profit_usd": 4.45,
+      "volume_available": 0.5
+    },
+    {
+      "symbol": "ETH/USDT",
+      "buy_exchange": "binance",
+      "sell_exchange": "bybit",
+      "buy_price": 3420.45,
+      "sell_price": 3422.18,
+      "profit_percentage": 0.051,
+      "profit_usd": 1.73,
+      "volume_available": 2.1
+    }
+  ],
+  "ai_signals_generated": [
+    {
+      "symbol": "BTC/USDT",
+      "exchange": "binance",
+      "signal": "BUY",
+      "confidence": 78.5,
+      "price": 103445.67,
+      "position_size": 0.02,
+      "stop_loss": 98273.39,
+      "take_profit": 113790.24,
+      "reasoning": "Strong momentum + high volume + bullish sentiment"
+    },
+    {
+      "symbol": "ETH/USDT",
+      "exchange": "binance",
+      "signal": "SELL",
+      "confidence": 65.2,
+      "price": 3420.45,
+      "position_size": 0.03,
+      "stop_loss": 3591.47,
+      "take_profit": 3078.41,
+      "reasoning": "Bearish divergence + resistance level + negative sentiment"
+    },
+    {
+      "symbol": "ADA/USDT",
+      "exchange": "bybit",
+      "signal": "HOLD",
+      "confidence": 45.8,
+      "price": 0.4567,
+      "position_size": 0.0,
+      "stop_loss": 0.0,
+      "take_profit": 0.0,
+      "reasoning": "Sideways consolidation + mixed signals + low volume"
+    }
+  ],
+  "portfolio_summary": {
+    "total_value_usd": 25750.0,
+    "exchanges": {
+      "binance": {
+        "allocation": 0.4,
+        "value_usd": 10300.0,
+        "assets": {
+          "BTC": {
+            "amount": 0.05,
+            "value_usd": 5172.28
+          },
+          "ETH": {
+            "amount": 1.2,
+            "value_usd": 4104.54
+          },
+          "USDT": {
+            "amount": 1023.18,
+            "value_usd": 1023.18
+          }
+        }
+      },
+      "bybit": {
+        "allocation": 0.25,
+        "value_usd": 6437.5,
+        "assets": {
+          "BTC": {
+            "amount": 0.03,
+            "value_usd": 3103.37
+          },
+          "ETH": {
+            "amount": 0.8,
+            "value_usd": 2736.36
+          },
+          "USDT": {
+            "amount": 597.77,
+            "value_usd": 597.77
+          }
+        }
+      },
+      "coinbase": {
+        "allocation": 0.2,
+        "value_usd": 5150.0,
+        "assets": {
+          "BTC": {
+            "amount": 0.025,
+            "value_usd": 2586.14
+          },
+          "ETH": {
+            "amount": 0.6,
+            "value_usd": 2052.27
+          },
+          "USD": {
+            "amount": 511.59,
+            "value_usd": 511.59
+          }
+        }
+      },
+      "cash_reserves": {
+        "allocation": 0.15,
+        "value_usd": 3862.5,
+        "assets": {
+          "USDT": {
+            "amount": 3862.5,
+            "value_usd": 3862.5
+          }
+        }
+      }
+    }
+  },
+  "performance_metrics": {
+    "daily_pnl": 342.18,
+    "weekly_pnl": 1247.65,
+    "monthly_pnl": 3891.22,
+    "total_trades": 89,
+    "winning_trades": 62,
+    "losing_trades": 27,
+    "win_rate": 69.7,
+    "avg_win": 145.67,
+    "avg_loss": -87.34,
+    "profit_factor": 1.67,
+    "sharpe_ratio": 2.14,
+    "max_drawdown": -8.3,
+    "current_drawdown": -2.1,
+    "total_fees_paid": 156.78,
+    "arbitrage_profits": 89.45,
+    "ai_signal_profits": 252.73
+  }
+}

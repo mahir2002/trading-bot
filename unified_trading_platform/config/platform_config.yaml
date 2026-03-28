@@ -1,0 +1,79 @@
+critical_modules:
+- risk_management
+- order_execution
+database:
+  pool_size: 5
+  timeout: 30
+  url: sqlite:///trading_platform.db
+exchanges:
+  binance:
+    enabled: false
+    rate_limit: 1200
+    sandbox: true
+modules:
+  ai_models:
+    config:
+      features:
+      - price
+      - volume
+      - technical
+      - sentiment
+      model_type: ensemble
+      retrain_interval: 3600
+    enabled: true
+    priority: 2
+
+  market_data:
+    config:
+      symbols:
+      - BTC/USDT
+      - ETH/USDT
+      timeframes:
+      - 1m
+      - 5m
+      - 1h
+      update_interval: 1
+    enabled: true
+    priority: 1
+  order_execution:
+    config:
+      execution_mode: paper
+      slippage_tolerance: 0.001
+    enabled: true
+    priority: 1
+  risk_management:
+    config:
+      max_portfolio_risk: 0.1
+      max_risk_per_trade: 0.02
+      stop_loss: 0.05
+      take_profit: 0.1
+    enabled: true
+    priority: 1
+  signal_generation:
+    config:
+      confidence_threshold: 0.7
+      max_signals_per_hour: 10
+    enabled: true
+    priority: 2
+  portfolio:
+    config:
+      initial_balance: 10000
+      position_sizing: dynamic
+    enabled: true
+    priority: 2
+platform:
+  debug: true
+  environment: development
+  log_level: INFO
+  name: Unified Trading Platform
+  version: 1.0.0
+restart_policy: automatic
+security:
+  api_rate_limit: 1000
+  max_concurrent_requests: 100
+trading:
+  default_position_size: 0.01
+  max_position_size: 0.1
+  risk_percentage: 0.02
+  stop_loss_percentage: 0.05
+  take_profit_percentage: 0.1

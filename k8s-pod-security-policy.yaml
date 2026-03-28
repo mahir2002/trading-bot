@@ -1,0 +1,43 @@
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  labels:
+    container.profile: trading_bot
+    security.level: maximum
+  name: ultra-secure-trading_bot
+spec:
+  allowPrivilegeEscalation: false
+  allowedCapabilities: []
+  forbiddenSysctls:
+  - '*'
+  fsGroup:
+    ranges:
+    - max: 65535
+      min: 1000
+    rule: MustRunAs
+  hostIPC: false
+  hostNetwork: false
+  hostPID: false
+  privileged: false
+  readOnlyRootFilesystem: true
+  requiredDropCapabilities:
+  - ALL
+  runAsGroup:
+    ranges:
+    - max: 65535
+      min: 1000
+    rule: MustRunAs
+  runAsUser:
+    rule: MustRunAsNonRoot
+  seLinux:
+    rule: RunAsAny
+  seccomp:
+    profiles:
+    - runtime/custom-trading_bot
+    rule: MustRunAs
+  volumes:
+  - emptyDir
+  - projected
+  - secret
+  - downwardAPI
+  - persistentVolumeClaim

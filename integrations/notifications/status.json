@@ -1,0 +1,17 @@
+{
+  "status": "active",
+  "channels_enabled": {
+    "telegram": true,
+    "email": true,
+    "discord": false
+  },
+  "alert_types_enabled": {
+    "new_listing": true,
+    "price_alert": true,
+    "sentiment_change": true,
+    "trade_execution": true,
+    "system_error": true
+  },
+  "last_notification_sent": null,
+  "notifications_sent_today": 0
+}

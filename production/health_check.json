@@ -1,0 +1,16 @@
+{
+  "status": "healthy",
+  "timestamp": "2025-06-22T08:36:56.611600",
+  "version": "2.0.0-enhanced",
+  "components": {
+    "performance_monitoring": true,
+    "cache_system": true,
+    "new_listing_detection": true,
+    "historical_data_fetching": true,
+    "social_sentiment_analysis": true
+  },
+  "system_load": {
+    "cpu_percent": 50.0,
+    "memory_percent": 78.6
+  }
+}

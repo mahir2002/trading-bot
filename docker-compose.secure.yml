@@ -1,0 +1,97 @@
+networks:
+  secure-trading-network:
+    driver: bridge
+    ipam:
+      config:
+      - subnet: 172.30.0.0/16
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard.secure
+    cap_add: &id001 []
+    cap_drop: &id002
+    - ALL
+    container_name: dashboard-secure
+    depends_on:
+    - redis
+    environment:
+    - TZ=UTC
+    - TRADING_MODE=paper
+    - SECURITY_LEVEL=high
+    networks:
+    - secure-trading-network
+    ports:
+    - 8050:8050
+    read_only: true
+    restart: unless-stopped
+    security_opt: &id003
+    - no-new-privileges:true
+    - apparmor:unconfined
+    tmpfs: &id004
+    - /tmp:rw,noexec,nosuid,size=100m
+    - /var/run:rw,noexec,nosuid,size=100m
+    user: 1001:1001
+    volumes:
+    - secure_logs:/app/logs:ro
+    - secure_data:/app/data:ro
+  redis:
+    cap_add: []
+    cap_drop:
+    - ALL
+    container_name: redis-secure
+    image: redis:7-alpine
+    networks:
+    - secure-trading-network
+    ports:
+    - 6379:6379
+    read_only: true
+    restart: unless-stopped
+    security_opt:
+    - no-new-privileges:true
+    tmpfs:
+    - /tmp:rw,noexec,nosuid,size=100m
+    user: 999:999
+    volumes:
+    - redis_data:/data
+  trading-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile.trading-bot.secure
+    cap_add: *id001
+    cap_drop: *id002
+    container_name: trading-bot-secure
+    environment:
+    - TZ=UTC
+    - TRADING_MODE=paper
+    - SECURITY_LEVEL=high
+    healthcheck:
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      test:
+      - CMD
+      - python
+      - -c
+      - import requests; requests.get("http://localhost:5001/health")
+      timeout: 10s
+    networks:
+    - secure-trading-network
+    ports:
+    - 5001:5001
+    read_only: true
+    restart: unless-stopped
+    security_opt: *id003
+    tmpfs: *id004
+    user: 1001:1001
+    volumes:
+    - secure_logs:/app/logs
+    - secure_data:/app/data:ro
+version: '3.8'
+volumes:
+  redis_data:
+    driver: local
+  secure_data:
+    driver: local
+  secure_logs:
+    driver: local
